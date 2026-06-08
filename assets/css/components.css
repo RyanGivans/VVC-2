@@ -1,0 +1,9 @@
+.card,.example-card,.testimonial-card,.placeholder-panel{background:#111714;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card p,.example-card p{color:var(--muted)}
+.card a{display:inline-block;margin-top:18px;color:var(--gold);font-weight:800}
+.example-card{display:grid;gap:18px}
+.media-placeholder{min-height:220px;border:1px dashed rgba(198,161,91,.55);border-radius:16px;display:grid;place-items:center;color:rgba(244,239,230,.6);background:linear-gradient(145deg,rgba(23,61,42,.4),rgba(7,9,8,.7));text-align:center;padding:20px}
+.cta-block{padding:70px 5vw;background:var(--green);text-align:center}
+.cta-block h2{max-width:920px;margin:0 auto}
+.simple-list{margin:24px 0 0;padding-left:18px;color:var(--muted)}
+.simple-list li{margin:8px 0}

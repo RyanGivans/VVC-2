@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Vista Venture Co. | Websites, Photography & Media"
+description: "Vista Venture Co. helps businesses look more impressive online with websites, photography, real estate media, Dayframe portraits, and custom media packages."
+page_css: home.css
+---
+
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">Websites • Photography • Media</p>
+    <h1>Make your business look as good online as it does in person.</h1>
+    <p>Vista Venture Co. helps businesses stand out with polished websites, professional photography, real estate media, school portraits, and custom creative solutions.</p>
+    <a class="button" href="/contact/">Start a Project</a>
+    <a class="button secondary" href="/services/">Explore Services</a>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">What we do</p>
+    <h2>Creative services built to help you get more business.</h2>
+    <div class="grid grid-3" style="margin-top:28px">
+      {% include service-card.html eyebrow="01" title="Web Design" text="Custom websites that explain what you offer and make it easier for customers to take action." href="/services/web-design/" %}
+      {% include service-card.html eyebrow="02" title="Photography" text="Professional images for websites, social media, marketing, food, products, portraits, and events." href="/services/photography/" %}
+      {% include service-card.html eyebrow="03" title="Real Estate Media" text="HDR photography, drone, twilight, land, boundary overlays, and 360 walkthroughs." href="/services/real-estate/" %}
+      {% include service-card.html eyebrow="04" title="Dayframe" text="A more modern school portrait experience built around quality, convenience, and better images." href="/services/dayframe/" %}
+      {% include service-card.html eyebrow="05" title="Other Services" text="Construction progress, consulting, media packages, vehicles, events, drone, video, and custom projects." href="/services/other/" %}
+      {% include service-card.html eyebrow="06" title="Our Work" text="A growing collection of complete projects that show how our services work together." href="/our-work/" %}
+    </div>
+  </div>
+</section>
+{% include contact-cta.html %}

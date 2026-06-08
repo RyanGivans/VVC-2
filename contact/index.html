@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Contact | Vista Venture Co."
+description: "Contact Vista Venture Co. to discuss a website, photography, real estate media, Dayframe, or custom project."
+page_css: contact.css
+---
+
+<section class="page-intro"><div class="container"><p class="eyebrow">Contact Vista Venture</p><h1>Tell me about your project.</h1><p>Share what you need, what your business does, and what you would like to improve. We can build the right plan from there.</p></div></section>
+<section class="section"><div class="container">
+<form class="placeholder-panel" action="https://formspree.io/f/xwvykbeg" method="POST">
+  <input type="hidden" name="_subject" value="[VISTA-WEBSITE-CONTACT] New Website Inquiry">
+  <p class="eyebrow">Project inquiry</p>
+  <div class="grid grid-2">
+    <label>Name<input name="name" required></label>
+    <label>Business<input name="business_name"></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Phone<input type="tel" name="phone"></label>
+  </div>
+  <label>What are you interested in?
+    <select name="service">
+      <option>Web Design</option><option>Photography</option><option>Real Estate Media</option><option>Dayframe</option><option>Other Services</option>
+    </select>
+  </label>
+  <label>Tell me about your project<textarea name="message" rows="7" required></textarea></label>
+  <button class="button" type="submit">Send Inquiry</button>
+</form>
+</div></section>

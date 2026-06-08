@@ -1,0 +1,1 @@
+window.VISTA_FEATURED_PROJECTS = [];

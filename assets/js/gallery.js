@@ -1,0 +1,1 @@
+/* Add lightbox or gallery filtering later. */

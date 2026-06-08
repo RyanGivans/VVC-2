@@ -1,0 +1,4 @@
+.site-footer{display:grid;grid-template-columns:1fr auto;gap:30px;padding:44px 5vw;background:#050706;border-top:1px solid var(--line)}
+.site-footer p{max-width:620px;color:var(--muted);margin-top:6px}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.footer-links a{color:var(--gold);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}

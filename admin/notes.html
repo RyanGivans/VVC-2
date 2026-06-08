@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Notes | Vista Venture Co.</title>
+  <style>
+    body{margin:0;font-family:Arial,sans-serif;background:#f4f1eb;color:#111;padding:40px 18px}
+    .wrap{max-width:850px;margin:0 auto;background:#fff;padding:32px;border-radius:18px;box-shadow:0 18px 45px rgba(0,0,0,.12)}
+    h1{margin-top:0;font-size:34px}h2{margin-top:34px;border-top:1px solid #ddd;padding-top:24px;font-size:22px}
+    label{display:block;font-weight:700;margin-top:16px;margin-bottom:6px}
+    input,textarea,select{width:100%;box-sizing:border-box;padding:13px;border-radius:10px;border:1px solid #ccc;font-size:16px}
+    textarea{min-height:110px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    button{margin-top:28px;width:100%;padding:16px;border:none;border-radius:999px;background:#111;color:white;font-size:17px;font-weight:700;cursor:pointer}
+    .small{color:#666;font-size:14px;margin-bottom:24px}
+    @media(max-width:700px){.row{grid-template-columns:1fr}.wrap{padding:24px}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<h1>Appointment Notes</h1>
+<p class="small">Internal Vista Venture Co. appointment summary form. This page is intentionally not linked in the public website navigation.</p>
+<form action="https://formspree.io/f/xwvykbeg" method="POST">
+<input type="hidden" name="_subject" value="[VISTA-APPOINTMENT-NOTES] New Appointment Notes">
+<input type="hidden" name="form_code" value="VISTA-APPOINTMENT-NOTES">
+<h2>Appointment Summary</h2>
+<div class="row"><div><label>Name</label><input name="name"></div><div><label>Business Name</label><input name="business_name"></div></div>
+<label>Position</label><input name="position">
+<div class="row"><div><label>Phone Number</label><input type="tel" name="phone_number"></div><div><label>Email</label><input type="email" name="email"></div></div>
+<div class="row"><div><label>Appointment Date / Time</label><input name="appointment_date_time"></div><div><label>Appointment Location</label><input name="appointment_location"></div></div>
+<label>Do they have our business card?</label><select name="has_business_card"><option value="">Select one</option><option>Yes</option><option>No</option></select>
+<label>Notes</label><textarea name="notes" placeholder="Highlights of what they want/require, what you talked about, budget, etc."></textarea>
+<label>Product / Service Discussed or Quoted</label><textarea name="product_service_discussed"></textarea>
+<div class="row"><div><label>Was a quote provided?</label><select name="quote_provided"><option value="">Select one</option><option>Yes</option><option>No</option></select></div><div><label>Quote Amount</label><input name="quote_amount" placeholder="$"></div></div>
+<div class="row"><div><label>Was a turnaround time given?</label><select name="turnaround_time_given"><option value="">Select one</option><option>Yes</option><option>No</option></select></div><div><label>Time Frame Given for Service</label><input name="time_frame_given"></div></div>
+<h2>Moving Forward</h2>
+<label>What do you need from them?</label><textarea name="need_from_them"></textarea>
+<label>What do they need from you?</label><textarea name="they_need_from_you" placeholder="Quotes, samples, portfolio access, invoicing info, etc."></textarea>
+<label>Anything they would like to share?</label><textarea name="client_shared_info" placeholder="Important info, interesting facts, project/property history, etc."></textarea>
+<h2>Post Appointment</h2>
+<label>What do you need to do next?</label><textarea name="next_steps" placeholder="Action items, purchases, follow-up date, next meeting, etc."></textarea>
+<button type="submit">Send Appointment Notes</button>
+</form>
+</div>
+</body>
+</html>
