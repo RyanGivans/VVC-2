@@ -9,32 +9,28 @@ page_css: home.css
   <div class="home-intro">
     <div>
       <p class="eyebrow">Websites • Photography • Real Estate Media • Creative Services</p>
-      <h1>Helping businesses look professional and attract more customers.</h1>
-      <p>Everything you need to build trust, stand out, and grow.</p>
+      <h1>Helping businesses look professional, build trust, and attract more customers.</h1>
+      <p>Choose the service area that best fits your project.</p>
     </div>
     <a class="button" href="{{ '/contact/' | relative_url }}">Start a Project</a>
   </div>
 
   <div class="pillar-grid">
     <a class="pillar pillar-real-estate" href="{{ '/services/real-estate/' | relative_url }}" aria-label="Explore Real Estate Media">
-      <div class="pillar-media media-stack real-estate-stack">
-        <div class="media-frame dominant"><img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Twilight real estate photography example"></div>
-        <div class="media-frame"><img src="{{ '/assets/media/boundry-elkins.jpg' | relative_url }}" alt="Land boundary overlay example"></div>
-        <div class="media-frame"><img src="{{ '/assets/media/house-drone.jpg' | relative_url }}" alt="Drone real estate media example"></div>
+      <div class="pillar-media single-image">
+        <img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Twilight real estate photography example">
       </div>
       <div class="pillar-copy">
         <span class="pillar-meta">Properties • Land • Drone</span>
         <h1>Real Estate<br><strong>Media</strong></h1>
-        <p>HDR photography, drone, land, boundary overlays, twilight, and listing media that helps properties stand out.</p>
+        <p>HDR photography, drone, twilight, land, and listing media that helps properties stand out.</p>
         <span class="pillar-link">Explore Real Estate <b>→</b></span>
       </div>
     </a>
 
     <a class="pillar pillar-photography" href="{{ '/services/photography/' | relative_url }}" aria-label="Explore Photoshoots">
-      <div class="pillar-media photo-collage visual-depth">
-        <div class="media-frame dominant"><img src="{{ '/assets/media/raven.jpg' | relative_url }}" alt="Portrait photoshoot example"></div>
-        <div class="media-frame"><img src="{{ '/assets/media/photography/portraits/Petal and Pane-1.jpg' | relative_url }}" alt="Petals and Panes portrait example"></div>
-        <div class="media-frame"><img src="{{ '/assets/media/meatloaf.jpg' | relative_url }}" alt="Food photography example"></div>
+      <div class="pillar-media single-image">
+        <img src="{{ '/assets/media/raven.jpg' | relative_url }}" alt="Portrait photoshoot example">
       </div>
       <div class="pillar-copy">
         <span class="pillar-meta">Portraits • Branding • Food</span>
@@ -45,16 +41,15 @@ page_css: home.css
     </a>
 
     <a class="pillar pillar-web" href="{{ '/services/web-design/' | relative_url }}" aria-label="Explore Web Design">
-      <div class="pillar-media web-collage">
-        <div class="web-shot shot-one"><img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Storage website screenshot"></div>
-        <div class="web-shot shot-two"><img src="{{ '/assets/media/lex-website.png' | relative_url }}" alt="Lex website screenshot"></div>
-        <div class="web-shot shot-three analytics-card" aria-label="Website growth analytics example">
+      <div class="pillar-media web-collage web-clean">
+        <div class="web-shot web-main"><img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Storage website screenshot"></div>
+        <div class="analytics-card analytics-large" aria-label="Website traffic growth example">
           <div class="analytics-label">Traffic Growth</div>
           <div class="analytics-value">+142%</div>
           <div class="analytics-line"><span></span><span></span><span></span><span></span><span></span><span></span></div>
           <div class="analytics-sub">More visits. More opportunities.</div>
         </div>
-        <div class="web-shot shot-four analytics-card compact" aria-label="SEO impressions analytics example">
+        <div class="analytics-card compact" aria-label="Search visibility example">
           <div class="analytics-label">Search Visibility</div>
           <div class="analytics-value">↑</div>
           <div class="analytics-sub">SEO • Mobile • Integrations</div>
@@ -69,15 +64,15 @@ page_css: home.css
     </a>
 
     <a class="pillar pillar-business" href="{{ '/services/other/' | relative_url }}" aria-label="Explore Commercial Media">
-      <div class="pillar-media business-collage visual-depth">
-        <div class="media-frame dominant"><img src="{{ '/assets/media/ruben-house.jpg' | relative_url }}" alt="Commercial media project example"></div>
-        <div class="media-frame"><img src="{{ '/assets/media/event-gully-summer-concert' | relative_url }}" alt="Event media example"></div>
-        <div class="media-frame"><img src="{{ '/assets/media/drone-snow.jpg' | relative_url }}" alt="Drone media example"></div>
+      <div class="pillar-media commercial-collage">
+        <div class="media-frame dominant"><img src="{{ '/assets/media/restaurant.jpg' | relative_url }}" alt="Restaurant commercial media example"></div>
+        <div class="media-frame"><img src="{{ '/assets/media/event-gully-summer-concert.jpg' | relative_url }}" alt="Event media example"></div>
+        <div class="media-frame"><img src="{{ '/assets/media/drone-snow.jpg' | relative_url }}" alt="Commercial drone media example"></div>
       </div>
       <div class="pillar-copy">
-        <span class="pillar-meta">Events • Construction • Commercial</span>
+        <span class="pillar-meta">Food • Events • Commercial</span>
         <h1>Commercial<br><strong>Media</strong></h1>
-        <p>Video, drone, photography, and content that showcase your business, events, and projects.</p>
+        <p>Photography, video, drone, and content that showcase your business, events, and projects.</p>
         <span class="pillar-link">Explore Commercial Media <b>→</b></span>
       </div>
     </a>
