@@ -1,10 +1,10 @@
 body{overflow-x:hidden}
-.home-shell{background:#050706;color:var(--cream)}
-.pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));min-height:calc(100vh - 74px - 190px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.pillar{position:relative;display:flex;flex-direction:column;min-height:760px;overflow:hidden;background:#07100c;border-right:1px solid var(--line);transition:transform .35s ease,background .35s ease}
+.home-shell{height:calc(100vh - 74px);display:grid;grid-template-rows:minmax(0,1fr) 148px;background:#050706;color:var(--cream);overflow:hidden}
+.pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));min-height:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pillar{position:relative;display:flex;flex-direction:column;min-height:0;overflow:hidden;background:#07100c;border-right:1px solid var(--line);transition:background .35s ease}
 .pillar:last-child{border-right:0}
 .pillar:hover{background:#0a1711}
-.pillar-media{position:relative;height:47%;display:grid;overflow:hidden;background:#0b1510}
+.pillar-media{position:relative;height:55%;display:grid;overflow:hidden;background:#0b1510}
 .media-frame{position:relative;overflow:hidden;background:#0d1512}
 .media-frame img{width:100%;height:100%;object-fit:cover;transition:transform .65s ease,opacity .35s ease}
 .pillar:hover .media-frame img{transform:scale(1.06)}
@@ -13,28 +13,29 @@ body{overflow-x:hidden}
 .photo-collage .portrait{grid-column:1 / -1}
 .business-collage{grid-template-columns:1fr 1fr;grid-template-rows:1.1fr .9fr}
 .business-collage .large{grid-column:1 / -1}
-.pillar-copy{position:relative;display:flex;flex:1;flex-direction:column;padding:24px 24px 20px;background:linear-gradient(180deg,rgba(4,8,6,.22),rgba(4,8,6,.98) 18%)}
-.pillar-index{color:var(--gold);font-size:1.25rem;letter-spacing:.08em;margin-bottom:8px}
-.pillar h1{font-size:clamp(2.25rem,3vw,4.6rem);line-height:.9;letter-spacing:-.065em;text-transform:uppercase;margin:0}
+.pillar-copy{position:relative;display:flex;flex:1;flex-direction:column;padding:16px 20px 14px;background:linear-gradient(180deg,rgba(4,8,6,.22),rgba(4,8,6,.98) 16%)}
+.pillar-index{color:var(--gold);font-size:1rem;letter-spacing:.08em;margin-bottom:6px}
+.pillar h1{font-size:clamp(1.8rem,2.5vw,3.9rem);line-height:.9;letter-spacing:-.065em;text-transform:uppercase;margin:0}
 .pillar h1 strong{color:var(--gold);font-weight:inherit}
-.pillar p{margin:16px 0 20px;color:rgba(244,239,230,.82);font-size:.98rem;line-height:1.55}
-.pillar-link{margin-top:auto;color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.pillar-link b{font-size:1.05rem;margin-left:8px}
+.pillar p{margin:12px 0 14px;color:rgba(244,239,230,.82);font-size:.88rem;line-height:1.45}
+.pillar-link{margin-top:auto;color:var(--gold);font-size:.7rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.pillar-link b{font-size:.95rem;margin-left:7px}
 .web-placeholder{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at top right,rgba(198,161,91,.16),transparent 32%),linear-gradient(135deg,#14251c,#07100c)}
 .device-frame{position:absolute;background:#111;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 54px rgba(0,0,0,.4)}
 .device-frame.laptop{width:78%;height:58%;top:17%;left:10%;border-radius:10px 10px 4px 4px;padding:12px}
 .device-frame.phone{width:22%;height:43%;right:11%;bottom:10%;border-radius:12px;padding:7px}
 .device-screen{height:100%;display:flex;flex-direction:column;justify-content:center;gap:12px;padding:16px;background:linear-gradient(140deg,#132b20,#07100c);color:var(--cream)}
 .device-screen span{color:var(--gold);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
-.device-screen strong{font-size:1rem;line-height:1.2}
+.device-screen strong{font-size:.92rem;line-height:1.2}
 .device-bar{height:4px;width:36%;margin:0 auto 8px;border-radius:99px;background:rgba(255,255,255,.18)}
-.dayframe-banner{display:grid;grid-template-columns:.92fr 1.08fr;min-height:190px;background:linear-gradient(90deg,#0d2b22,#142f2a);border-bottom:1px solid var(--line)}
-.dayframe-brand{display:flex;flex-direction:column;justify-content:center;padding:26px 5vw}
-.dayframe-kicker{color:var(--gold);font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-.dayframe-brand h2{font-size:clamp(2.5rem,5vw,5rem);margin:4px 0 8px;color:var(--cream)}
-.dayframe-brand p{max-width:620px;color:rgba(244,239,230,.82)}
+.dayframe-banner{display:grid;grid-template-columns:.92fr 1.08fr;min-height:0;background:linear-gradient(90deg,#0d2b22,#142f2a);border-bottom:1px solid var(--line)}
+.dayframe-brand{display:flex;flex-direction:column;justify-content:center;padding:16px 5vw}
+.dayframe-kicker{color:var(--gold);font-size:.62rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.dayframe-brand h2{font-size:clamp(2rem,4vw,4rem);margin:2px 0 4px;color:var(--cream)}
+.dayframe-brand p{max-width:620px;color:rgba(244,239,230,.82);font-size:.9rem;line-height:1.35}
 .dayframe-images{display:grid;grid-template-columns:repeat(3,1fr);overflow:hidden}
 .dayframe-images img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
 .dayframe-banner:hover .dayframe-images img{transform:scale(1.05)}
-@media(max-width:1100px){.pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr));min-height:auto}.pillar{min-height:640px;border-bottom:1px solid var(--line)}.dayframe-banner{grid-template-columns:1fr}.dayframe-images{min-height:180px}}
-@media(max-width:700px){.pillar-grid{grid-template-columns:1fr}.pillar{min-height:620px}.pillar-media{height:45%}.dayframe-images{grid-template-columns:repeat(3,1fr);min-height:150px}.dayframe-brand{padding:24px 5vw}.pillar-copy{padding:22px}}
+.site-footer{display:none}
+@media(max-width:1100px){.home-shell{height:auto;display:block;overflow:visible}.pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr));min-height:auto}.pillar{min-height:620px;border-bottom:1px solid var(--line)}.dayframe-banner{grid-template-columns:1fr;min-height:260px}.dayframe-images{min-height:180px}.site-footer{display:grid}}
+@media(max-width:700px){.pillar-grid{grid-template-columns:1fr}.pillar{min-height:620px}.pillar-media{height:45%}.dayframe-images{grid-template-columns:repeat(3,1fr);min-height:150px}.dayframe-brand{padding:24px 5vw}.pillar-copy{padding:22px}.site-footer{display:grid}}
