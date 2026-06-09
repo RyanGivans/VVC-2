@@ -8,9 +8,9 @@ page_css: home.css
 <section class="home-shell">
   <div class="home-intro">
     <div>
-      <p class="eyebrow">Websites • Photography • Media</p>
+      <p class="eyebrow">Websites • Photography • Real Estate Media • Creative Services</p>
       <h1>Helping businesses look professional and attract more customers.</h1>
-      <p>Choose the service area that best fits your project.</p>
+      <p>Everything you need to build trust, stand out, and grow.</p>
     </div>
     <a class="button" href="{{ '/contact/' | relative_url }}">Start a Project</a>
   </div>
@@ -23,7 +23,6 @@ page_css: home.css
         <div class="media-frame"><img src="{{ '/assets/media/house-drone.jpg' | relative_url }}" alt="Drone real estate media example"></div>
       </div>
       <div class="pillar-copy">
-        <span class="pillar-index">01</span>
         <span class="pillar-meta">Properties • Land • Drone</span>
         <h1>Real Estate<br><strong>Media</strong></h1>
         <p>HDR photography, drone, land, boundary overlays, twilight, and listing media that helps properties stand out.</p>
@@ -38,7 +37,6 @@ page_css: home.css
         <div class="media-frame"><img src="{{ '/assets/media/meatloaf.jpg' | relative_url }}" alt="Food photography example"></div>
       </div>
       <div class="pillar-copy">
-        <span class="pillar-index">02</span>
         <span class="pillar-meta">Portraits • Branding • Food</span>
         <h1>Photo<br><strong>Shoots</strong></h1>
         <p>Professional imagery for brands, businesses, portraits, products, food, and events.</p>
@@ -48,32 +46,39 @@ page_css: home.css
 
     <a class="pillar pillar-web" href="{{ '/services/web-design/' | relative_url }}" aria-label="Explore Web Design">
       <div class="pillar-media web-collage">
-        <div class="web-shot shot-one"><img src="{{ '/assets/media/vvc-website.png' | relative_url }}" alt="Vista Venture website screenshot"></div>
-        <div class="web-shot shot-two"><img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Storage website screenshot"></div>
-        <div class="web-shot shot-three"><img src="{{ '/assets/media/lex-website.png' | relative_url }}" alt="Lex website screenshot"></div>
-        <div class="web-shot shot-four"><img src="{{ '/assets/media/pinpoint-website.png' | relative_url }}" alt="Pinpoint website screenshot"></div>
+        <div class="web-shot shot-one"><img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Storage website screenshot"></div>
+        <div class="web-shot shot-two"><img src="{{ '/assets/media/lex-website.png' | relative_url }}" alt="Lex website screenshot"></div>
+        <div class="web-shot shot-three analytics-card" aria-label="Website growth analytics example">
+          <div class="analytics-label">Traffic Growth</div>
+          <div class="analytics-value">+142%</div>
+          <div class="analytics-line"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="analytics-sub">More visits. More opportunities.</div>
+        </div>
+        <div class="web-shot shot-four analytics-card compact" aria-label="SEO impressions analytics example">
+          <div class="analytics-label">Search Visibility</div>
+          <div class="analytics-value">↑</div>
+          <div class="analytics-sub">SEO • Mobile • Integrations</div>
+        </div>
       </div>
       <div class="pillar-copy">
-        <span class="pillar-index">03</span>
         <span class="pillar-meta">Websites • SEO • Integrations</span>
         <h1>Web<br><strong>Design</strong></h1>
-        <p>Custom websites that help your business look professional, build trust, and convert visitors into customers.</p>
+        <p>Custom websites that help your business look professional, build trust, and turn more visitors into customers.</p>
         <span class="pillar-link">Explore Web Design <b>→</b></span>
       </div>
     </a>
 
-    <a class="pillar pillar-business" href="{{ '/services/other/' | relative_url }}" aria-label="Explore Business Media">
+    <a class="pillar pillar-business" href="{{ '/services/other/' | relative_url }}" aria-label="Explore Commercial Media">
       <div class="pillar-media business-collage visual-depth">
-        <div class="media-frame dominant"><img src="{{ '/assets/media/ruben-house.jpg' | relative_url }}" alt="Business media project example"></div>
+        <div class="media-frame dominant"><img src="{{ '/assets/media/ruben-house.jpg' | relative_url }}" alt="Commercial media project example"></div>
         <div class="media-frame"><img src="{{ '/assets/media/event-gully-summer-concert' | relative_url }}" alt="Event media example"></div>
         <div class="media-frame"><img src="{{ '/assets/media/drone-snow.jpg' | relative_url }}" alt="Drone media example"></div>
       </div>
       <div class="pillar-copy">
-        <span class="pillar-index">04</span>
         <span class="pillar-meta">Events • Construction • Commercial</span>
-        <h1>Business<br><strong>Media</strong></h1>
-        <p>Construction progress, events, vehicle media, drone, video, consulting, and custom business packages.</p>
-        <span class="pillar-link">Explore Business Media <b>→</b></span>
+        <h1>Commercial<br><strong>Media</strong></h1>
+        <p>Video, drone, photography, and content that showcase your business, events, and projects.</p>
+        <span class="pillar-link">Explore Commercial Media <b>→</b></span>
       </div>
     </a>
   </div>
@@ -86,9 +91,8 @@ page_css: home.css
       <p>Easy ordering. Better portraits. A better experience for schools.</p>
       <span class="pillar-link">Visit Dayframe <b>→</b></span>
     </div>
-    <div class="dayframe-split">
-      <img src="{{ '/assets/media/dayframe/dayframe-1.png' | relative_url }}" alt="Dayframe school portrait example">
-      <img src="{{ '/assets/media/dayframe/dayframe-2.png' | relative_url }}" alt="Dayframe school portrait example">
+    <div class="dayframe-hero-image">
+      <img src="{{ '/assets/media/dayframe/dayframe-2.png' | relative_url }}" alt="Dayframe school photography experience">
     </div>
   </a>
 </section>
