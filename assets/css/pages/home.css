@@ -37,7 +37,7 @@ body{overflow-x:hidden}
 .dayframe-banner{display:grid;grid-template-columns:610px minmax(0,1fr) 560px;min-height:0;margin:0 14px 14px;border:1px solid rgba(198,161,91,.44);border-radius:12px;background:linear-gradient(90deg,#0d2b22,#142f2a);overflow:hidden}
 .dayframe-logo-panel{display:flex;align-items:flex-start;justify-content:center;padding:0 18px;background:transparent;overflow:hidden}
 .dayframe-logo-wrap{width:100%;max-width:520px;overflow:visible}
-.dayframe-logo{display:block;width:100%;height:auto;object-fit:contain;object-position:center;transform:translateY(-28px) scale(1.38);transform-origin:center top;filter:brightness(0) invert(1)}
+.dayframe-logo{display:block;width:100%;height:auto;object-fit:contain;object-position:center;transform:translateY(-84px) scale(1.38);transform-origin:center top;filter:brightness(0) invert(1)}
 .dayframe-copy{display:flex;flex-direction:column;justify-content:flex-start;padding:16px 24px 14px}
 .dayframe-kicker{margin:0 0 5px;color:var(--gold);font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .dayframe-copy h2{margin:0;color:var(--cream);font-size:clamp(1.65rem,2.1vw,2.4rem);line-height:.98}
@@ -45,8 +45,8 @@ body{overflow-x:hidden}
 .dayframe-copy .pillar-link{margin-top:10px}
 .dayframe-photo-grid{display:grid;grid-template-columns:1.45fr .85fr;gap:6px;padding:6px;overflow:hidden;background:#10231d;border-left:1px solid rgba(244,239,230,.16)}
 .dayframe-photo-grid img{width:100%;height:100%;min-width:0;object-fit:cover;object-position:center 50%;border-radius:6px;background:#dce5ec}
-.dayframe-photo-grid img:last-child{object-fit:contain;object-position:center center;background:#dce5ec}
+.dayframe-photo-grid img:last-child{object-fit:contain;object-position:center top;background:#dce5ec;transform:translateY(-8px) scale(1.03);transform-origin:center top}
 .site-footer{display:none}
-@media(max-width:1450px){.dayframe-banner{grid-template-columns:520px minmax(0,1fr) 500px}.dayframe-logo-wrap{max-width:455px}.dayframe-logo{transform:translateY(-24px) scale(1.34)}}
-@media(max-width:1100px){.home-shell{height:auto;display:block;overflow:visible}.home-intro{display:block;padding:20px 5vw}.home-intro>div{display:block}.home-intro h1{margin:5px 0 8px;white-space:normal}.home-intro p{white-space:normal}.home-intro .button{margin-top:12px}.pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:12px}.pillar{min-height:520px}.dayframe-banner{grid-template-columns:1fr;min-height:auto;margin:0 12px 12px}.dayframe-logo-panel{min-height:150px;padding:0 18px}.dayframe-logo-wrap{max-width:420px}.dayframe-logo{transform:translateY(-18px) scale(1.2)}.dayframe-photo-grid{min-height:190px}.site-footer{display:grid}}
+@media(max-width:1450px){.dayframe-banner{grid-template-columns:520px minmax(0,1fr) 500px}.dayframe-logo-wrap{max-width:455px}.dayframe-logo{transform:translateY(-72px) scale(1.34)}}
+@media(max-width:1100px){.home-shell{height:auto;display:block;overflow:visible}.home-intro{display:block;padding:20px 5vw}.home-intro>div{display:block}.home-intro h1{margin:5px 0 8px;white-space:normal}.home-intro p{white-space:normal}.home-intro .button{margin-top:12px}.pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:12px}.pillar{min-height:520px}.dayframe-banner{grid-template-columns:1fr;min-height:auto;margin:0 12px 12px}.dayframe-logo-panel{min-height:150px;padding:0 18px}.dayframe-logo-wrap{max-width:420px}.dayframe-logo{transform:translateY(-52px) scale(1.2)}.dayframe-photo-grid{min-height:190px}.site-footer{display:grid}}
 @media(max-width:700px){.pillar-grid{grid-template-columns:1fr}.pillar{min-height:520px}.pillar-media{height:43%}.dayframe-copy{padding:16px 18px}.dayframe-photo-grid{grid-template-columns:1fr;min-height:auto}.dayframe-photo-grid img{min-height:150px}.pillar-copy{padding:15px 18px}}
