@@ -1,16 +1,86 @@
 ---
 layout: default
 title: "Our Work | Vista Venture Co."
-description: "Featured Vista Venture Co. projects showing how websites, photography, drone, real estate media, and custom services work together."
+description: "Explore Vista Venture Co. work across websites, real estate media, personal photography, food, events, drone, and custom projects."
 page_css: our-work.css
 ---
 
-<section class="page-intro"><div class="container"><p class="eyebrow">Case studies and complete projects</p><h1>Our Work</h1><p>This page is ready for complete projects that show how multiple services can work together. Build it out gradually as your strongest projects are completed.</p></div></section>
-<section class="section"><div class="container">
-  <div class="grid grid-3">
-    {% include example-card.html eyebrow="Future Case Study" title="Eagle Rock Storage" text="A place to feature website design, photography, drone, video, and ongoing media support together." %}
-    {% include example-card.html eyebrow="Future Case Study" title="Real Estate Project" text="A place to show HDR photography, twilight, drone, land, or boundary-overlay work together." %}
-    {% include example-card.html eyebrow="Future Case Study" title="Local Business Project" text="A place to feature a business website, branding photos, social content, and integrations." %}
+<section class="svc-hero work-hero">
+  <div class="container">
+    <p class="eyebrow">Vista Venture Co. Portfolio</p>
+    <h1>Work built to earn attention.</h1>
+    <p>Websites, photography, drone, real estate media, school portraits, and custom projects designed to help people understand the value faster.</p>
+    <div class="svc-actions">
+      <a class="button" href="#featured-work">Explore the Work</a>
+      <a class="button secondary" href="{{ '/contact/' | relative_url }}">Start a Project</a>
+    </div>
   </div>
-</div></section>
-{% include contact-cta.html %}
+</section>
+
+<section class="svc-section svc-light">
+  <div class="container svc-heading">
+    <div><p class="eyebrow">Different projects. Different goals.</p><h2>The strongest work starts with the outcome.</h2></div>
+    <p>A website should turn attention into action. A listing should feel worth seeing. A portrait should feel personal. A restaurant image should make someone hungry. The style changes with the project, but the purpose stays practical.</p>
+  </div>
+  <div class="container svc-grid four">
+    <article class="svc-card"><span class="number">Websites</span><h3>More calls, bookings, visits, and sales.</h3><p>Custom websites designed around the actions a business actually wants customers to take.</p></article>
+    <article class="svc-card"><span class="number">Real Estate</span><h3>Listings that feel easier to choose.</h3><p>HDR photography, twilight, drone, land media, and walkthroughs that create clarity.</p></article>
+    <article class="svc-card"><span class="number">Photography</span><h3>Images that feel worth keeping.</h3><p>Portraits, food, events, and branding media that feel polished without feeling generic.</p></article>
+    <article class="svc-card"><span class="number">Custom Projects</span><h3>The right mix for the actual need.</h3><p>Drone, video, construction progress, events, and flexible creative combinations.</p></article>
+  </div>
+</section>
+
+<section id="featured-work" class="svc-section svc-dark">
+  <div class="container svc-heading">
+    <div><p class="eyebrow">Featured work</p><h2>A mix of websites, properties, people, and places.</h2></div>
+    <p>This page will keep growing as Vista Venture completes more projects. For now, it gives a clear look at the range of work already available.</p>
+  </div>
+  <div class="container work-grid">
+    <a class="work-card work-large" href="{{ '/services/real-estate/' | relative_url }}"><img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Twilight real estate photography"><div><span>Real Estate Media</span><h3>Twilight listing photography</h3><p>Strong exterior presentation that makes a property feel more premium online.</p></div></a>
+    <a class="work-card" href="{{ '/services/web-design/' | relative_url }}"><img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Storage website"><div><span>Web Design</span><h3>Eagle Rock Storage</h3><p>A conversion-focused website built around storage rentals and clear action.</p></div></a>
+    <a class="work-card" href="{{ '/services/photography/' | relative_url }}"><img src="{{ '/assets/media/raven.jpg' | relative_url }}" alt="Portrait photography"><div><span>Personal Photography</span><h3>Natural portrait work</h3><p>Clean, expressive portraits with a more relaxed feel.</p></div></a>
+    <a class="work-card work-wide" href="{{ '/services/other/' | relative_url }}"><img src="{{ '/assets/media/smoked-meatloaf.jpg' | relative_url }}" alt="Food photography"><div><span>Food + Hospitality</span><h3>Media that creates appetite</h3><p>Food photography designed to make the dish feel worth ordering.</p></div></a>
+    <a class="work-card" href="{{ '/services/real-estate/' | relative_url }}"><img src="{{ '/assets/media/boundry-elkins.jpg' | relative_url }}" alt="Land boundary overlay"><div><span>Land + Acreage</span><h3>Boundary overlays</h3><p>Clear land presentation that helps buyers understand the property.</p></div></a>
+    <a class="work-card" href="{{ '/services/other/' | relative_url }}"><img src="{{ '/assets/media/event-pride-crowd.jpg' | relative_url }}" alt="Event photography"><div><span>Event Coverage</span><h3>Capture the energy</h3><p>Images that preserve the atmosphere and help promote the next event.</p></div></a>
+    <a class="work-card work-wide" href="{{ '/services/dayframe/' | relative_url }}"><img src="https://www.vistaventureco.com/dayframe/assets/setup.jpg" alt="Dayframe school picture day setup"><div><span>Dayframe</span><h3>A better school picture day</h3><p>Modern portraits, easy ordering, and a smoother experience for schools and families.</p></div></a>
+  </div>
+</section>
+
+<section class="svc-section svc-green">
+  <div class="container svc-feature">
+    <div>
+      <p class="eyebrow">Web design portfolio</p>
+      <h2>Open the live websites and explore the work.</h2>
+      <p>The Web Design page includes live project links and scrolling previews so you can see how each website feels beyond a single screenshot.</p>
+      <a class="button" href="{{ '/services/web-design/' | relative_url }}">Explore Web Design</a>
+    </div>
+    <div class="svc-list">
+      <div><strong>Eagle Rock Boat & RV Storage</strong><span>A commercial storage website designed around rentals and property clarity.</span></div>
+      <div><strong>Pinpoint Fayetteville</strong><span>A bold entertainment website designed to capture the energy of the venue.</span></div>
+      <div><strong>Petals & Panes</strong><span>A refined brand website with a softer, more elegant presentation.</span></div>
+      <div><strong>Additional Projects</strong><span>Restaurants, retail, events, local businesses, and personal websites.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section svc-light">
+  <div class="container svc-heading">
+    <div><p class="eyebrow">Build around the project</p><h2>One service can stand alone. The right combination can do more.</h2></div>
+    <p>Some projects need a single strong deliverable. Others benefit from a complete package: website, photos, drone, video, integrations, and ongoing content. The best approach is the one that makes the project easier to understand and easier to choose.</p>
+  </div>
+  <div class="container svc-grid four">
+    <article class="svc-card"><span class="number">Website + Media</span><h3>A complete online presence.</h3><p>Pair a custom website with original photos, video, and drone content so the site feels specific to the business.</p></article>
+    <article class="svc-card"><span class="number">Listing Package</span><h3>Show the property clearly.</h3><p>Combine HDR photos, twilight, drone, boundary overlays, and 360 walkthroughs based on the listing.</p></article>
+    <article class="svc-card"><span class="number">Recurring Media</span><h3>Stay current over time.</h3><p>Monthly or milestone-based content for construction, businesses, inventory, and active projects.</p></article>
+    <article class="svc-card"><span class="number">Custom Project</span><h3>Start with the real goal.</h3><p>Describe what you are trying to accomplish and build the smallest useful package around that outcome.</p></article>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="container">
+    <p class="eyebrow">Build the next project</p>
+    <h2>Let’s create work that helps people choose you.</h2>
+    <p>Tell me what you are trying to sell, promote, document, or improve. We will build the right approach from there.</p>
+    <div class="svc-actions"><a class="button" href="{{ '/contact/' | relative_url }}">Start a Project</a></div>
+  </div>
+</section>
