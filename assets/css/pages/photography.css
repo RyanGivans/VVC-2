@@ -1,1 +1,2 @@
-/* Page-specific styles for photography. Add overrides here as this page develops. */
+@import url('./service-shared.css');
+.photography-hero{--svc-hero-image:url('../../media/raven.jpg');--svc-hero-position:center 42%}
