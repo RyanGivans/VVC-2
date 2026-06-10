@@ -1,89 +1,64 @@
 ---
 layout: default
 title: "Real Estate Media | Vista Venture Co."
-description: "Professional real estate photography, drone media, twilight images, boundary overlays, and 360 walkthroughs designed to help listings stand out and earn more attention."
+description: "Professional real estate photography, floor plans, 360 walkthroughs, drone photos, and listing flyers for Northwest Arkansas listings."
 page_css: real-estate.css
 ---
 
-<section class="svc-hero real-estate-hero">
-  <div class="container">
-    <p class="eyebrow">Real Estate Media</p>
-    <h1>Listings that feel worth seeing.</h1>
-    <p>Professional HDR photography, drone coverage, twilight images, land media, and interactive walkthroughs that help buyers understand the property before they ever step inside.</p>
-    <div class="svc-actions">
-      <a class="button" href="https://book.squareup.com/appointments/suqqvuvxmoeprs/location/LDK49TFBJ1HJH/services" target="_blank" rel="noopener">Book Real Estate Media</a>
-      <a class="button secondary" href="#real-estate-work">View Examples</a>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section svc-dark">
-  <div class="container svc-heading">
+<section class="re-hero">
+  <div class="container re-hero-grid">
     <div>
-      <p class="eyebrow">Make the first impression count</p>
-      <h2>Better presentation creates better interest.</h2>
+      <p class="re-eyebrow">Real Estate Media · Northwest Arkansas</p>
+      <h1>Everything your listing needs to look worth seeing.</h1>
+      <p class="re-lead">Professional listing media that helps buyers stop scrolling, understand the property faster, and feel more confident scheduling a showing.</p>
+      <div class="re-actions"><a class="re-button primary" href="#re-services">View Services & Pricing</a><a class="re-button secondary" href="{{ '/contact/' | relative_url }}">Ask a Question</a></div>
     </div>
-    <p>Buyers make fast decisions online. Strong listing media helps a property feel clearer, more complete, and more worth visiting in person. The goal is not simply to take photos. It is to help the listing earn attention.</p>
-  </div>
-  <div class="container svc-grid four">
-    <article class="svc-card"><span class="number">01</span><h3>Strong first impression</h3><p>Clean exterior photography gives buyers an immediate reason to stop scrolling and look closer.</p></article>
-    <article class="svc-card"><span class="number">02</span><h3>Show the layout</h3><p>Wide-angle HDR images help buyers understand the rooms, flow, finishes, and overall condition.</p></article>
-    <article class="svc-card"><span class="number">03</span><h3>Add context</h3><p>Drone coverage shows the lot, surroundings, access points, acreage, and neighborhood setting.</p></article>
-    <article class="svc-card"><span class="number">04</span><h3>Create confidence</h3><p>More complete media gives serious buyers a clearer reason to schedule a showing.</p></article>
+    <img class="re-hero-photo" src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Twilight listing photography example">
   </div>
 </section>
 
-<section id="real-estate-work" class="svc-section svc-green">
-  <div class="container svc-heading">
-    <div><p class="eyebrow">Listing media examples</p><h2>Show the space before they step inside.</h2></div>
-    <p>Each property needs a slightly different approach. Residential listings, land, acreage, and development property can all benefit from a media mix built around the strongest selling points.</p>
+<section id="re-services" class="re-section re-light">
+  <div class="container re-heading">
+    <div><p class="re-eyebrow">Services & launch pricing</p><h2>See the service. See the price. See the example.</h2></div>
+    <p>These are clear starting prices for standard listings. Larger homes, acreage, and unusual requests can be quoted before the shoot.</p>
   </div>
-  <div class="container svc-gallery">
-    <figure class="svc-gallery-card large"><img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Twilight real estate photography example"><figcaption class="svc-gallery-label"><span>Twilight</span><strong>Make the listing feel premium</strong></figcaption></figure>
-    <figure class="svc-gallery-card"><img src="{{ '/assets/media/boundry-elkins.jpg' | relative_url }}" alt="Boundary overlay land listing example"><figcaption class="svc-gallery-label"><span>Land + Acreage</span><strong>Show property boundaries</strong></figcaption></figure>
-    <figure class="svc-gallery-card large"><img src="{{ '/assets/media/wrn-farm-sunset.jpg' | relative_url }}" alt="Drone property photography at sunset"><figcaption class="svc-gallery-label"><span>Drone</span><strong>Show the setting from above</strong></figcaption></figure>
-    <figure class="svc-gallery-card wide"><img src="{{ '/assets/media/house-drone.jpg' | relative_url }}" alt="Aerial property image"><figcaption class="svc-gallery-label"><span>Property Context</span><strong>Make the listing easier to understand</strong></figcaption></figure>
+
+  <div class="container re-services">
+    <article class="re-service">
+      <div class="re-copy"><p class="re-label">Core listing service</p><h3>Interior & Exterior HDR Bracketed Images</h3><strong class="re-price">Starting at $160</strong><p>Balanced, edited interior and exterior photography that keeps rooms, windows, finishes, and exterior details clear and professional.</p><ul><li>HDR bracketed images</li><li>Interior and exterior coverage</li><li>MLS-ready delivery</li><li>At least 30 edited images for a typical listing</li></ul></div>
+      <img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="HDR listing photography example">
+    </article>
+
+    <article class="re-service">
+      <div class="re-copy"><p class="re-label">Add-on</p><h3>2D Floor Plan + Photo Tour</h3><strong class="re-price">Starting at $75</strong><p>A clean floor plan and interactive photo tour that help buyers understand the flow of the home before an in-person visit.</p><ul><li>2D layout</li><li>Room measurements</li><li>Interactive photo tour</li><li>Shareable listing link</li></ul></div>
+      <div class="re-embed"><iframe src="https://visithome.ai/827vPy2ggHeEwFyo9J37JP?mu=ft" title="Interactive floor plan example" allowfullscreen></iframe></div>
+    </article>
+
+    <article class="re-service">
+      <div class="re-copy"><p class="re-label">Add-on</p><h3>360 Walkthrough</h3><strong class="re-price">Starting at $100</strong><p>Let buyers move through the property at their own pace and understand the layout before scheduling a showing.</p><ul><li>Interactive walkthrough</li><li>Easy sharing</li><li>Useful for relocation buyers</li><li>CloudPano delivery</li></ul></div>
+      <div class="re-embed re-cloudpano"><div id="demosA010001"><script async data-short="demosA010001" data-path="tours" data-is-self-hosted="false" width="100%" height="500px" src="https://app.cloudpano.com/public/shareScript.js"></script></div></div>
+    </article>
+
+    <article class="re-service">
+      <div class="re-copy"><p class="re-label">Add-on</p><h3>Drone Photos</h3><strong class="re-price">Starting at $80</strong><p>Aerial images that show the lot, access, acreage, surrounding area, and overall setting in a way ground-level photos cannot.</p><ul><li>Edited aerial stills</li><li>Property context</li><li>Great for acreage and corner lots</li><li>MLS-ready delivery</li></ul></div>
+      <div class="re-two-images"><img src="{{ '/assets/media/house-drone.jpg' | relative_url }}" alt="Drone property example"><img src="{{ '/assets/media/wrn-farm-sunset.jpg' | relative_url }}" alt="Drone acreage example"></div>
+    </article>
+
+    <article class="re-service">
+      <div class="re-copy"><p class="re-label">Add-on</p><h3>Listing Flyer</h3><strong class="re-price">Starting at $50</strong><p>A polished graphic for social media, open-house promotion, and agent marketing using your listing details and media.</p><ul><li>Property highlights</li><li>Agent contact details</li><li>Social-friendly layout</li><li>Final proof before delivery</li></ul></div>
+      <div class="re-placeholder"><strong>Listing flyer example</strong><span>Send the example when ready and I will add it here.</span></div>
+    </article>
   </div>
 </section>
 
-<section class="svc-section svc-light">
-  <div class="container svc-feature">
-    <div class="svc-feature-box">
-      <p class="eyebrow">360 Walkthroughs</p>
-      <strong>Walk through before the showing.</strong>
-      <p>Interactive 360 tours let buyers move through the property at their own pace, revisit rooms, and better understand the layout before scheduling a visit.</p>
-    </div>
-    <div>
-      <p class="eyebrow">A more complete listing</p>
-      <h2>Photos get attention. The right extras answer questions.</h2>
-      <p>Drone media adds scale and context. Boundary overlays make land easier to understand. Twilight images can make a listing feel more polished. A 360 walkthrough gives buyers control. Each service can stand alone or be combined around the property.</p>
-      <div class="svc-list">
-        <div><strong>Residential Listings</strong><span>Interior and exterior HDR photos, twilight images, drone coverage, and optional walkthrough media.</span></div>
-        <div><strong>Land + Acreage</strong><span>Drone-heavy photography, boundary overlays, access-point views, and surrounding-area context.</span></div>
-        <div><strong>Commercial + Development</strong><span>Property documentation and aerial views that help investors, buyers, and decision-makers understand the project.</span></div>
-      </div>
-    </div>
+<section class="re-section re-packages">
+  <div class="container re-heading"><div><p class="re-eyebrow">Popular bundles</p><h2>Easy starting points for common listings.</h2></div><p>Choose the essentials or add tools that help buyers understand the property more clearly.</p></div>
+  <div class="container re-package-grid">
+    <article><p class="re-label">Essential</p><h3>Listing Photos</h3><strong>$160</strong><span>HDR interior and exterior photos</span></article>
+    <article class="featured"><p class="re-label">Most Popular</p><h3>Photos + Floor Plan</h3><strong>$225</strong><span>HDR photos and interactive layout tour</span></article>
+    <article><p class="re-label">Showcase</p><h3>Photos + Floor Plan + Drone</h3><strong>$295</strong><span>Photos, layout clarity, and aerial context</span></article>
+    <article><p class="re-label">Premium</p><h3>Full Listing Media</h3><strong>$375</strong><span>Photos, floor plan, drone, and 360 tour</span></article>
   </div>
 </section>
 
-<section class="svc-section svc-dark">
-  <div class="container svc-heading">
-    <div><p class="eyebrow">Transparent options</p><h2>Build the right package for the listing.</h2></div>
-    <p>Start with the media the property needs most. Add drone or 360 coverage when it helps the listing communicate more clearly.</p>
-  </div>
-  <div class="container svc-price-grid">
-    <article class="svc-price-card"><div><p class="eyebrow">Add-On</p><h3>Drone Coverage</h3><div class="svc-price">$100</div><p>Aerial photos that show the property, lot, surrounding area, and setting from above.</p></div><div class="svc-tags"><span class="svc-pill">Aerial Photos</span><span class="svc-pill">Property Context</span></div></article>
-    <article class="svc-price-card"><div><p class="eyebrow">Add-On</p><h3>360 Walkthrough</h3><div class="svc-price">$100</div><p>An interactive walkthrough that lets buyers move through the home and understand the layout at their own pace.</p></div><div class="svc-tags"><span class="svc-pill">Interactive Tour</span><span class="svc-pill">Buyer Clarity</span></div></article>
-    <article class="svc-price-card featured"><div><p class="eyebrow">Best Value</p><h3>Drone + 360 Bundle</h3><div class="svc-price">$175</div><p>Combine aerial context with an interactive walkthrough for a more complete online presentation.</p></div><div class="svc-tags"><span class="svc-pill">Save $25</span><span class="svc-pill">Complete Experience</span></div></article>
-  </div>
-  <div class="container"><div class="svc-note"><strong>MLS-friendly delivery:</strong> Final media is delivered in a practical format for listing platforms, MLS workflows, social media, and agent marketing. Interior and exterior photo pricing can be quoted based on the size and needs of the listing.</div></div>
-</section>
-
-<section class="svc-cta">
-  <div class="container">
-    <p class="eyebrow">Make the listing easier to choose</p>
-    <h2>Give buyers a reason to stop scrolling.</h2>
-    <p>Tell me about the property and the deadline. I will help you choose the media that gives the listing the strongest presentation without adding extras you do not need.</p>
-    <div class="svc-actions"><a class="button" href="https://book.squareup.com/appointments/suqqvuvxmoeprs/location/LDK49TFBJ1HJH/services" target="_blank" rel="noopener">Book Real Estate Media</a><a class="button secondary" href="{{ '/contact/' | relative_url }}">Ask a Question</a></div>
-  </div>
-</section>
+<section class="re-cta"><div class="container"><p class="re-eyebrow">Book your next listing</p><h2>Give buyers a reason to stop scrolling.</h2><p>Send the address, square footage, deadline, and the services you want. I will confirm the plan before the shoot.</p><div class="re-actions"><a class="re-button primary" href="https://book.squareup.com/appointments/suqqvuvxmoeprs/location/LDK49TFBJ1HJH/services" target="_blank" rel="noopener">Book Real Estate Media</a><a class="re-button secondary" href="{{ '/contact/' | relative_url }}">Ask a Question</a></div></div></section>
