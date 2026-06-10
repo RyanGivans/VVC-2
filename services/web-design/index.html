@@ -18,15 +18,15 @@ page_css: web-design.css
       <div class="web-hero-note">Custom websites • Mobile-friendly design • SEO-ready structure • Flexible budgets</div>
     </div>
 
-    <div class="hero-device-stage" aria-label="Website design example shown on desktop and phone">
+    <div class="hero-device-stage" aria-label="Sims Smokehouse website example shown on a desktop computer">
       <div class="desktop-mockup desktop-mockup-large">
         <div class="desktop-topbar"><span></span><span></span><span></span></div>
-        <div class="desktop-screen"><img src="{{ '/assets/media/pinpoint-website.png' | relative_url }}" alt="Pinpoint Fayetteville website example"></div>
+        <div class="desktop-screen">
+          <video class="hero-site-video" autoplay muted loop playsinline preload="metadata" aria-label="Scrolling preview of the Sims Smokehouse website">
+            <source src="{{ '/assets/media/web-design/videos/Sims-1.mp4' | relative_url }}" type="video/mp4">
+          </video>
+        </div>
         <div class="desktop-stand"></div>
-      </div>
-      <div class="phone-mockup">
-        <div class="phone-notch"></div>
-        <img src="{{ '/assets/media/vvc-website.png' | relative_url }}" alt="Vista Venture Co. website example on a phone">
       </div>
       <div class="growth-card">
         <span class="growth-label">The goal</span>
@@ -75,15 +75,19 @@ page_css: web-design.css
         <p class="eyebrow">Real projects • Live websites</p>
         <h2>See the work for yourself.</h2>
       </div>
-      <p>These are real websites built for real projects. Open any site to explore the live experience.</p>
+      <p>These are real websites built for real projects. Hover over a preview to watch the site scroll, or open any project to explore the live experience.</p>
     </div>
 
     <div class="featured-sites-grid">
-      <a class="site-showcase" href="https://ryangivans.github.io/ersomo/" target="_blank" rel="noopener" aria-label="Visit Eagle Rock Boat and RV Storage live website">
+      <a class="site-showcase has-video-preview" data-site-preview href="https://ryangivans.github.io/ersomo/" target="_blank" rel="noopener" aria-label="Visit Eagle Rock Boat and RV Storage live website">
         <div class="showcase-device">
           <div class="browser-frame">
             <div class="browser-toolbar"><i></i><i></i><i></i><span>eaglerockstorage.com</span></div>
             <img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Boat and RV Storage website homepage">
+            <video class="site-preview-video" muted loop playsinline preload="none" aria-label="Scrolling preview of the Eagle Rock Boat and RV Storage website">
+              <source src="{{ '/assets/media/web-design/videos/ers-1.mp4' | relative_url }}" type="video/mp4">
+            </video>
+            <span class="preview-hint">Hover to preview</span>
           </div>
           <div class="device-base"></div>
         </div>
@@ -95,11 +99,15 @@ page_css: web-design.css
         </div>
       </a>
 
-      <a class="site-showcase" href="https://ryangivans.github.io/Pinpoint/" target="_blank" rel="noopener" aria-label="Visit Pinpoint Fayetteville live website">
+      <a class="site-showcase has-video-preview" data-site-preview href="https://ryangivans.github.io/Pinpoint/" target="_blank" rel="noopener" aria-label="Visit Pinpoint Fayetteville live website">
         <div class="showcase-device">
           <div class="browser-frame">
             <div class="browser-toolbar"><i></i><i></i><i></i><span>pinpointfayetteville.com</span></div>
             <img src="{{ '/assets/media/pinpoint-website.png' | relative_url }}" alt="Pinpoint Fayetteville website homepage">
+            <video class="site-preview-video" muted loop playsinline preload="none" aria-label="Scrolling preview of the Pinpoint Fayetteville website">
+              <source src="{{ '/assets/media/web-design/videos/pinpoint-1.mp4' | relative_url }}" type="video/mp4">
+            </video>
+            <span class="preview-hint">Hover to preview</span>
           </div>
           <div class="device-base"></div>
         </div>
@@ -127,11 +135,15 @@ page_css: web-design.css
         </div>
       </a>
 
-      <a class="site-showcase" href="http://paytonandlexsayido.com/" target="_blank" rel="noopener" aria-label="Visit Payton and Lex wedding website">
+      <a class="site-showcase has-video-preview" data-site-preview href="http://paytonandlexsayido.com/" target="_blank" rel="noopener" aria-label="Visit Payton and Lex wedding website">
         <div class="showcase-device">
           <div class="browser-frame">
             <div class="browser-toolbar"><i></i><i></i><i></i><span>paytonandlexsayido.com</span></div>
             <img src="{{ '/assets/media/lex-website.png' | relative_url }}" alt="Payton and Lex wedding website homepage">
+            <video class="site-preview-video" muted loop playsinline preload="none" aria-label="Scrolling preview of the Payton and Lex wedding website">
+              <source src="{{ '/assets/media/web-design/videos/paytonandlex-1.mp4' | relative_url }}" type="video/mp4">
+            </video>
+            <span class="preview-hint">Hover to preview</span>
           </div>
           <div class="device-base"></div>
         </div>
@@ -219,3 +231,5 @@ page_css: web-design.css
     <a class="button" href="{{ '/contact/' | relative_url }}">Start Your Website</a>
   </div>
 </section>
+
+<script src="{{ '/assets/js/web-design-previews.js' | relative_url }}" defer></script>

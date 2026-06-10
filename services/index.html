@@ -1,16 +1,71 @@
 ---
 layout: default
 title: "Services | Vista Venture Co."
-description: "Explore Vista Venture Co. services including web design, photography, real estate media, Dayframe, and custom media solutions."
+description: "Explore Vista Venture Co. services including real estate media, web design, personal photography, Dayframe, and flexible custom media solutions."
 page_css: services.css
 ---
 
-<section class="page-intro"><div class="container"><p class="eyebrow">Vista Venture Co.</p><h1>Services</h1><p>Choose the service that best matches your project. Each page includes focused examples so you can quickly see the kind of work that fits your needs.</p></div></section>
-<section class="section"><div class="container grid grid-3">
-{% include service-card.html eyebrow="01" title="Web Design" text="Custom-coded websites, integrations, mobile-friendly layouts, and stronger online presentation." href="/services/web-design/" %}
-{% include service-card.html eyebrow="02" title="Photography" text="Branding, food, products, portraits, events, and commercial photography." href="/services/photography/" %}
-{% include service-card.html eyebrow="03" title="Real Estate" text="HDR photos, drone, land, boundary overlays, twilight, commercial, and 360 media." href="/services/real-estate/" %}
-{% include service-card.html eyebrow="04" title="Dayframe" text="Modern school portrait experiences and polished portrait galleries." href="/services/dayframe/" %}
-{% include service-card.html eyebrow="05" title="Other Services" text="Construction progress, consulting, media packages, vehicles, events, drone, and video." href="/services/other/" %}
-</div></section>
-{% include contact-cta.html %}
+<section class="svc-hero services-hero">
+  <div class="container">
+    <p class="eyebrow">Vista Venture Co. Services</p>
+    <h1>Better presentation helps people choose you.</h1>
+    <p>Websites, photography, drone, video, 360 media, and creative support built around one goal: helping businesses, properties, people, schools, and projects stand out.</p>
+    <div class="svc-actions">
+      <a class="button" href="{{ '/contact/' | relative_url }}">Start a Project</a>
+      <a class="button secondary" href="#service-directions">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section svc-light">
+  <div class="container svc-heading">
+    <div><p class="eyebrow">Different services. One goal.</p><h2>Start with what you want to accomplish.</h2></div>
+    <p>A house needs clarity. A website needs to generate action. A portrait session needs to feel personal. A school photo day needs to be easy. The right service starts with the result you want, not a rigid checklist.</p>
+  </div>
+  <div class="container svc-grid four">
+    <article class="svc-card"><span class="number">Sell a Property</span><h3>Make the listing easier to understand.</h3><p>Start with HDR photography, then add drone, twilight, boundary overlays, or 360 coverage as needed.</p><a class="svc-link" href="{{ '/services/real-estate/' | relative_url }}">Explore Real Estate →</a></article>
+    <article class="svc-card"><span class="number">Grow a Business</span><h3>Turn attention into more customers.</h3><p>Use a stronger website, better photography, and clear calls to action to help more people choose your business.</p><a class="svc-link" href="{{ '/services/web-design/' | relative_url }}">Explore Web Design →</a></article>
+    <article class="svc-card"><span class="number">Capture a Moment</span><h3>Create photos worth keeping.</h3><p>Portraits, couples, families, seniors, and milestones with a clean, natural feel.</p><a class="svc-link" href="{{ '/services/photography/' | relative_url }}">Explore Photography →</a></article>
+    <article class="svc-card"><span class="number">Improve Picture Day</span><h3>Give schools a better experience.</h3><p>Modern school portraits, organized workflows, digital delivery, and simpler family ordering.</p><a class="svc-link" href="{{ '/services/dayframe/' | relative_url }}">Explore Dayframe →</a></article>
+  </div>
+</section>
+
+<section id="service-directions" class="svc-section svc-dark">
+  <div class="container svc-heading">
+    <div><p class="eyebrow">Choose your direction</p><h2>Build the right package for the actual project.</h2></div>
+    <p>Each service can stand alone or combine with others. The strongest package is the one that solves the real presentation problem without adding work you do not need.</p>
+  </div>
+  <div class="container service-bento">
+    <a class="service-tile tile-large" href="{{ '/services/real-estate/' | relative_url }}"><img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Real estate media"><div><span>Real Estate Media</span><h3>Listings that feel worth seeing.</h3><p>HDR photography, drone, twilight, land, and 360 walkthroughs.</p></div></a>
+    <a class="service-tile" href="{{ '/services/web-design/' | relative_url }}"><img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Website design example"><div><span>Web Design</span><h3>Websites that work harder.</h3><p>Custom websites, integrations, SEO-ready structure, and clearer action.</p></div></a>
+    <a class="service-tile" href="{{ '/services/photography/' | relative_url }}"><img src="{{ '/assets/media/raven.jpg' | relative_url }}" alt="Personal portrait photography"><div><span>Personal Photography</span><h3>Images that feel like you.</h3><p>Portraits, couples, families, seniors, and milestones.</p></div></a>
+    <a class="service-tile tile-wide" href="{{ '/services/dayframe/' | relative_url }}"><img src="https://www.vistaventureco.com/dayframe/assets/setup.jpg" alt="Dayframe school picture day setup"><div><span>Dayframe</span><h3>A better school picture day.</h3><p>Modern school portraits, easier ordering, and a smoother experience for schools and families.</p></div></a>
+    <a class="service-tile tile-wide" href="{{ '/services/other/' | relative_url }}"><img src="{{ '/assets/media/smoked-meatloaf.jpg' | relative_url }}" alt="Custom media services"><div><span>Other Services</span><h3>Flexible media for everything else.</h3><p>Food, events, construction, drone, vehicles, commercial media, and custom packages.</p></div></a>
+  </div>
+</section>
+
+<section class="svc-section svc-green">
+  <div class="container svc-feature">
+    <div>
+      <p class="eyebrow">Not sure where to start?</p>
+      <h2>Start with the goal, not the service.</h2>
+      <p>Tell me what you are trying to sell, promote, document, or improve. I will help identify the smallest useful package and the strongest next step.</p>
+      <a class="button" href="{{ '/contact/' | relative_url }}">Talk Through the Project</a>
+    </div>
+    <div class="svc-list">
+      <div><strong>I need to sell a property</strong><span>Start with HDR photography, then add drone, twilight, boundary overlays, and 360 media when they improve the listing.</span></div>
+      <div><strong>I need more customers</strong><span>Start with your website and online presentation, then add media that makes your business easier to trust and choose.</span></div>
+      <div><strong>I need recurring content</strong><span>Ask about monthly media coverage for construction, properties, inventory, restaurants, or active businesses.</span></div>
+      <div><strong>I need something unusual</strong><span>Describe the goal. Custom combinations of photo, video, drone, and web support are available.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-cta">
+  <div class="container">
+    <p class="eyebrow">Make the next step easy</p>
+    <h2>Tell me what you are trying to accomplish.</h2>
+    <p>You do not need to know the exact package before reaching out. Start with the goal, the deadline, and your budget. We will build the right approach from there.</p>
+    <div class="svc-actions"><a class="button" href="{{ '/contact/' | relative_url }}">Start a Project</a></div>
+  </div>
+</section>
