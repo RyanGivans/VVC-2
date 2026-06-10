@@ -19,19 +19,35 @@ page_css: real-estate-bright.css
 
 <section id="re-services" class="re-section re-light">
   <div class="container re-heading">
-    <div><p class="re-eyebrow">Services & launch pricing</p><h2>See the service. See the price. See the example.</h2></div>
+    <div>
+      <p class="re-eyebrow">Services & launch pricing</p>
+      <h2 class="re-price-heading"><span>See the service.</span><span>See the price.</span><span>See the example.</span></h2>
+    </div>
     <p>These are clear starting prices for standard listings. Larger homes, acreage, and unusual requests can be quoted before the shoot.</p>
   </div>
 
   <div class="container re-services">
-    <article class="re-service">
-      <div class="re-copy"><p class="re-label">Core listing service</p><h3>Interior & Exterior HDR Bracketed Images</h3><strong class="re-price">Starting at $160</strong><p>Balanced, edited interior and exterior photography that keeps rooms, windows, finishes, and exterior details clear and professional.</p><ul><li>HDR bracketed images</li><li>Interior and exterior coverage</li><li>MLS-ready delivery</li><li>At least 30 edited images for a typical listing</li></ul></div>
-      <img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="HDR listing photography example">
+    <article class="re-service re-hdr-service">
+      <div class="re-copy">
+        <p class="re-label">Interior & Exterior HDR Bracketed Images</p>
+        <h3>Photos that make buyers want to see the home.</h3>
+        <strong class="re-price">Starting at $160</strong>
+        <p>Strong listing photos do more than document the property. They help the home feel worth visiting, make the listing stand out online, and give buyers a reason to schedule a showing.</p>
+        <ul><li>HDR bracketed images</li><li>Interior and exterior coverage</li><li>MLS-ready delivery</li><li>At least 30 edited images for a typical listing</li></ul>
+      </div>
+      <div class="re-full-photo"><img src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="HDR listing photography example"></div>
     </article>
 
-    <article class="re-service">
-      <div class="re-copy"><p class="re-label">Add-on</p><h3>2D Floor Plan + Photo Tour</h3><strong class="re-price">Starting at $75</strong><p>A clean floor plan and interactive photo tour that help buyers understand the flow of the home before an in-person visit.</p><ul><li>2D layout</li><li>Room measurements</li><li>Interactive photo tour</li><li>Shareable listing link</li></ul></div>
-      <div class="re-embed"><iframe src="https://visithome.ai/827vPy2ggHeEwFyo9J37JP?mu=ft" title="Interactive floor plan example" allowfullscreen></iframe></div>
+    <article class="re-service re-floorplan-service">
+      <div class="re-copy">
+        <p class="re-label">Add-on</p>
+        <h3>2D Floor Plan + Photo Tour</h3>
+        <strong class="re-price">Starting at $75</strong>
+        <p>A clean floor plan and interactive photo tour help buyers understand the flow of the home before an in-person visit.</p>
+        <ul><li>2D layout</li><li>Room measurements</li><li>Interactive photo tour</li><li>Shareable listing link</li></ul>
+        <a class="re-button primary re-tour-button" href="https://visithome.ai/827vPy2ggHeEwFyo9J37JP?mu=ft" target="_blank" rel="noopener">Open Full Floor Plan Tour</a>
+      </div>
+      <div class="re-embed re-floorplan-embed"><iframe src="https://visithome.ai/827vPy2ggHeEwFyo9J37JP?mu=ft" title="Interactive floor plan example" allowfullscreen></iframe></div>
     </article>
 
     <article class="re-service">
@@ -40,13 +56,13 @@ page_css: real-estate-bright.css
     </article>
 
     <article class="re-service">
-      <div class="re-copy"><p class="re-label">Add-on</p><h3>Drone Photos</h3><strong class="re-price">Starting at $80</strong><p>Aerial images that show the lot, access, acreage, surrounding area, and overall setting in a way ground-level photos cannot.</p><ul><li>Edited aerial stills</li><li>Property context</li><li>Great for acreage and corner lots</li><li>MLS-ready delivery</li></ul></div>
+      <div class="re-copy"><p class="re-label">Add-on</p><h3>Drone Photos</h3><strong class="re-price">Starting at $80</strong><p>Aerial images show the lot, access, acreage, surrounding area, and overall setting in a way ground-level photos cannot.</p><ul><li>Edited aerial stills</li><li>Property context</li><li>Great for acreage and corner lots</li><li>MLS-ready delivery</li></ul></div>
       <div class="re-two-images"><img src="{{ '/assets/media/house-drone.jpg' | relative_url }}" alt="Drone property example"><img src="{{ '/assets/media/wrn-farm-sunset.jpg' | relative_url }}" alt="Drone acreage example"></div>
     </article>
 
-    <article class="re-service">
+    <article class="re-service re-flyer-service">
       <div class="re-copy"><p class="re-label">Add-on</p><h3>Listing Flyer</h3><strong class="re-price">Starting at $50</strong><p>A polished graphic for social media, open-house promotion, and agent marketing using your listing details and media.</p><ul><li>Property highlights</li><li>Agent contact details</li><li>Social-friendly layout</li><li>Final proof before delivery</li></ul></div>
-      <div class="re-placeholder"><strong>Listing flyer example</strong><span>Send the example when ready and I will add it here.</span></div>
+      <div class="re-flyer-image"><img src="{{ '/assets/media/real-estate/Madison-5116.png' | relative_url }}" alt="Real estate listing flyer example"></div>
     </article>
   </div>
 </section>
