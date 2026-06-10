@@ -1,23 +1,21 @@
 <header class="site-header">
-  <a class="brand" href="/">
-    <img src="/assets/media/logos/vista-horizontal.png" alt="Vista Venture Co.">
-  </a>
+  <a class="brand" href="{{ '/' | relative_url }}">Vista Venture Co.</a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
   <nav id="site-nav" class="site-nav">
-    <a href="/">Home</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
     <div class="nav-dropdown">
       <button class="nav-dropdown-toggle" aria-expanded="false">Services</button>
       <div class="nav-dropdown-menu">
-        <a href="/services/">All Services</a>
-        <a href="/services/web-design/">Web Design</a>
-        <a href="/services/photography/">Photography</a>
-        <a href="/services/real-estate/">Real Estate</a>
-        <a href="/services/dayframe/">Dayframe</a>
-        <a href="/services/other/">Other Services</a>
+        <a href="{{ '/services/' | relative_url }}">All Services</a>
+        <a href="{{ '/services/web-design/' | relative_url }}">Web Design</a>
+        <a href="{{ '/services/photography/' | relative_url }}">Photography</a>
+        <a href="{{ '/services/real-estate/' | relative_url }}">Real Estate</a>
+        <a href="{{ '/services/dayframe/' | relative_url }}">Dayframe</a>
+        <a href="{{ '/services/other/' | relative_url }}">Other Services</a>
       </div>
     </div>
-    <a href="/our-work/">Our Work</a>
-    <a href="/about/">About Vista Venture</a>
-    <a class="nav-cta" href="/contact/">Start a Project</a>
+    <a href="{{ '/our-work/' | relative_url }}">Our Work</a>
+    <a href="{{ '/about/' | relative_url }}">About Vista Venture</a>
+    <a class="nav-cta" href="{{ '/contact/' | relative_url }}">Start a Project</a>
   </nav>
 </header>
