@@ -1,43 +1,221 @@
 ---
 layout: default
 title: "Web Design | Vista Venture Co."
-description: "Custom websites that make your business look established, explain what you offer, and help customers take the next step."
+description: "Custom websites for local businesses that build trust, attract customers, and turn more attention into calls, bookings, visits, orders, and sales."
 page_css: web-design.css
 ---
 
-<section class="page-intro">
-  <div class="container">
-    <p class="eyebrow">Vista Venture Co. Services</p>
-    <h1>Web Design</h1>
-    <p>Custom websites that make your business look established, explain what you offer, and help customers take the next step.</p>
-    <a class="button" href="/services/web-design/examples/">View Examples</a>
+<section class="web-hero">
+  <div class="container web-hero-grid">
+    <div class="web-hero-copy">
+      <p class="eyebrow">Vista Venture Co. Web Design</p>
+      <h1>A better website should bring you more business.</h1>
+      <p class="web-hero-lead">Your website is not just an online brochure. It should help customers find you, understand what you offer, feel confident choosing your business, and take the next step.</p>
+      <div class="web-hero-actions">
+        <a class="button" href="{{ '/contact/' | relative_url }}">Start a Website</a>
+        <a class="button secondary" href="#live-websites">View Live Websites</a>
+      </div>
+      <div class="web-hero-note">Custom websites • Mobile-friendly design • SEO-ready structure • Flexible budgets</div>
+    </div>
+
+    <div class="hero-device-stage" aria-label="Website design example shown on desktop and phone">
+      <div class="desktop-mockup desktop-mockup-large">
+        <div class="desktop-topbar"><span></span><span></span><span></span></div>
+        <div class="desktop-screen"><img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Boat and RV Storage website example"></div>
+        <div class="desktop-stand"></div>
+      </div>
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <img src="{{ '/assets/media/pinpoint-website.png' | relative_url }}" alt="Pinpoint Fayetteville website example on a phone">
+      </div>
+      <div class="growth-card">
+        <span class="growth-label">The goal</span>
+        <strong>More customers.</strong>
+        <span>More calls, bookings, visits, orders, and opportunities.</span>
+      </div>
+    </div>
   </div>
 </section>
-<section class="section">
-  <div class="container grid grid-2">
+
+<section class="web-growth-section">
+  <div class="container">
+    <p class="eyebrow">A website should earn its keep</p>
+    <h2>Looking better online can mean more money in your pocket.</h2>
+    <p class="section-lead">People are already searching for businesses like yours. When they find you, your website should make the decision easier. Better presentation helps customers understand your value, trust your business, and feel ready to call, book, order, visit, or request a quote.</p>
+
+    <div class="growth-grid">
+      <article class="growth-point">
+        <span>01</span>
+        <h3>Get Found</h3>
+        <p>SEO-ready structure gives search engines and customers a clearer path to your business.</p>
+      </article>
+      <article class="growth-point">
+        <span>02</span>
+        <h3>Build Confidence</h3>
+        <p>A polished website makes your business feel established before a customer ever contacts you.</p>
+      </article>
+      <article class="growth-point">
+        <span>03</span>
+        <h3>Make It Easy</h3>
+        <p>Clear information and strong calls to action help customers quickly take the next step.</p>
+      </article>
+      <article class="growth-point">
+        <span>04</span>
+        <h3>Earn More Business</h3>
+        <p>More attention can become more calls, bookings, visits, online orders, and sales.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="live-websites" class="web-projects-section">
+  <div class="container">
+    <div class="section-heading-row">
+      <div>
+        <p class="eyebrow">Real projects • Live websites</p>
+        <h2>See the work for yourself.</h2>
+      </div>
+      <p>These are real websites built for real projects. Open any site to explore the live experience.</p>
+    </div>
+
+    <div class="featured-sites-grid">
+      <a class="site-showcase" href="https://ryangivans.github.io/ersomo/" target="_blank" rel="noopener" aria-label="Visit Eagle Rock Boat and RV Storage live website">
+        <div class="showcase-device">
+          <div class="browser-frame">
+            <div class="browser-toolbar"><i></i><i></i><i></i><span>eaglerockstorage.com</span></div>
+            <img src="{{ '/assets/media/ers-website.png' | relative_url }}" alt="Eagle Rock Boat and RV Storage website homepage">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="showcase-copy">
+          <p class="eyebrow">Storage Business</p>
+          <h3>Eagle Rock Boat & RV Storage</h3>
+          <p>A conversion-focused commercial website designed to explain the property clearly and guide visitors toward renting storage.</p>
+          <span>Visit Live Website →</span>
+        </div>
+      </a>
+
+      <a class="site-showcase" href="https://ryangivans.github.io/Pinpoint/" target="_blank" rel="noopener" aria-label="Visit Pinpoint Fayetteville live website">
+        <div class="showcase-device">
+          <div class="browser-frame">
+            <div class="browser-toolbar"><i></i><i></i><i></i><span>pinpointfayetteville.com</span></div>
+            <img src="{{ '/assets/media/pinpoint-website.png' | relative_url }}" alt="Pinpoint Fayetteville website homepage">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="showcase-copy">
+          <p class="eyebrow">Bar & Entertainment</p>
+          <h3>Pinpoint Fayetteville</h3>
+          <p>A bold, interactive site designed to capture the energy of a downtown cocktail bar, arcade, and late-night destination.</p>
+          <span>Visit Live Website →</span>
+        </div>
+      </a>
+
+      <a class="site-showcase" href="https://www.vistaventureco.com/" target="_blank" rel="noopener" aria-label="Visit Vista Venture Co. live website">
+        <div class="showcase-device">
+          <div class="browser-frame">
+            <div class="browser-toolbar"><i></i><i></i><i></i><span>vistaventureco.com</span></div>
+            <img src="{{ '/assets/media/vvc-website.png' | relative_url }}" alt="Vista Venture Co website homepage">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="showcase-copy">
+          <p class="eyebrow">Multi-Service Business</p>
+          <h3>Vista Venture Co.</h3>
+          <p>A larger service-driven website designed to organize multiple offerings and help customers find the right starting point.</p>
+          <span>Visit Live Website →</span>
+        </div>
+      </a>
+
+      <a class="site-showcase" href="http://paytonandlexsayido.com/" target="_blank" rel="noopener" aria-label="Visit Payton and Lex wedding website">
+        <div class="showcase-device">
+          <div class="browser-frame">
+            <div class="browser-toolbar"><i></i><i></i><i></i><span>paytonandlexsayido.com</span></div>
+            <img src="{{ '/assets/media/lex-website.png' | relative_url }}" alt="Payton and Lex wedding website homepage">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="showcase-copy">
+          <p class="eyebrow">Custom Event Website</p>
+          <h3>Payton & Lex Say I Do</h3>
+          <p>A refined event website built to share information clearly while matching the feeling and personality of the occasion.</p>
+          <span>Visit Live Website →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="more-sites">
+      <div class="more-sites-heading">
+        <p class="eyebrow">More live projects</p>
+        <h3>Different businesses need different solutions.</h3>
+      </div>
+      <div class="more-sites-grid">
+        <a href="https://ryangivans.github.io/block-street-records/" target="_blank" rel="noopener"><strong>Block Street Records</strong><span>Music retail website →</span></a>
+        <a href="https://ryangivans.github.io/fay-town-hottie/index.html" target="_blank" rel="noopener"><strong>Fay-Town Hottie</strong><span>Food brand website →</span></a>
+        <a href="https://ryangivans.github.io/ink-therapy/index.html" target="_blank" rel="noopener"><strong>Ink Therapy</strong><span>Service-business website →</span></a>
+        <a href="https://ryangivans.github.io/petalsandpanes/" target="_blank" rel="noopener"><strong>Petals & Panes</strong><span>Refined brand website →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="web-tools-section">
+  <div class="container tools-layout">
     <div>
-      <p class="eyebrow">What this includes</p>
-      <h2>Built around what your project actually needs.</h2>
+      <p class="eyebrow">Built around your business</p>
+      <h2>Make it easier for customers to spend money with you.</h2>
+      <p class="section-lead">A website can do much more than sit online and look pretty. The right features reduce friction and help customers move from interested to ready.</p>
+      <a class="button" href="{{ '/contact/' | relative_url }}">Tell Me What You Need</a>
     </div>
-    <div class="placeholder-panel">
-      <ul class="simple-list"><li>Custom-coded business websites</li>
-<li>Mobile-friendly design</li>
-<li>Contact forms and lead capture</li>
-<li>Booking, calendar, POS, ordering, and app integrations</li>
-<li>SEO-ready structure</li>
-<li>Photography and media integration</li></ul>
+    <div class="tools-grid">
+      <article><strong>Ordering & POS</strong><span>Connect customers to online ordering, menus, products, or payment tools.</span></article>
+      <article><strong>Booking & Calendars</strong><span>Let customers schedule appointments, services, tours, or consultations.</span></article>
+      <article><strong>Calls & Quote Requests</strong><span>Use clear forms and calls to action to capture more serious leads.</span></article>
+      <article><strong>Maps & Directions</strong><span>Make it easy for customers to find your location and visit in person.</span></article>
+      <article><strong>Analytics & Search</strong><span>Track visits, search visibility, and how people discover your business.</span></article>
+      <article><strong>Photo, Video & Drone</strong><span>Use original media that makes your business look worth choosing.</span></article>
     </div>
   </div>
 </section>
-<section class="section alt">
+
+<section class="web-pricing-section">
+  <div class="container pricing-layout">
+    <div>
+      <p class="eyebrow">Flexible pricing</p>
+      <h2>A stronger website can fit more budgets than you may think.</h2>
+      <p class="section-lead">Professional websites used to take months and cost thousands of dollars. The tools and workflow I use make it possible to build strong custom websites much more efficiently.</p>
+      <p class="section-lead">Some businesses need one clean page. Others need multiple pages, galleries, ordering tools, booking systems, or more advanced integrations. Tell me what you need and what you are comfortable investing. We will build the strongest version for your budget.</p>
+    </div>
+    <div class="pricing-card">
+      <p class="eyebrow">Typical project range</p>
+      <div class="price-line"><strong>Simple one-page website</strong><span>Starting around $450</span></div>
+      <div class="price-line"><strong>Multi-page business website</strong><span>Commonly $800–$1,500</span></div>
+      <div class="price-line"><strong>Advanced integrations</strong><span>Quoted around your project</span></div>
+      <p class="pricing-note">I work with a wide range of budgets. The right first step is a conversation about what will make the biggest difference for your business.</p>
+      <a class="button" href="{{ '/contact/' | relative_url }}">Start the Conversation</a>
+    </div>
+  </div>
+</section>
+
+<section class="community-section">
+  <div class="container community-grid">
+    <div>
+      <p class="eyebrow">Local business focused</p>
+      <h2>I want businesses in my community to succeed.</h2>
+    </div>
+    <div>
+      <p>Good local businesses deserve websites that reflect the quality of what they actually do. My goal is to help businesses look stronger online, reach more customers, and generate more revenue.</p>
+      <p>When your business succeeds, your team, your customers, and the community benefit. Your success also helps Vista Venture Co. grow. I want the website to be a real investment in your business, not just another expense.</p>
+      <a class="button" href="{{ '/contact/' | relative_url }}">Build Something That Works</a>
+    </div>
+  </div>
+</section>
+
+<section class="web-final-cta">
   <div class="container">
-    <p class="eyebrow">Add your best proof here</p>
-    <h2>Featured examples</h2>
-    <div class="grid grid-3" style="margin-top:24px">
-      {% include example-card.html eyebrow="Example 01" title="Replace with featured project" text="Add an image and a short description of the result." %}
-      {% include example-card.html eyebrow="Example 02" title="Replace with featured project" text="Add an image and a short description of the result." %}
-      {% include example-card.html eyebrow="Example 03" title="Replace with featured project" text="Add an image and a short description of the result." %}
-    </div>
+    <p class="eyebrow">Start with the goal</p>
+    <h2>Let’s build a website that works harder for your business.</h2>
+    <p>Tell me what your business needs, what is not working now, and what kind of budget you have in mind. We will start with the changes that can make the biggest impact.</p>
+    <a class="button" href="{{ '/contact/' | relative_url }}">Start Your Website</a>
   </div>
 </section>
-{% include contact-cta.html %}
