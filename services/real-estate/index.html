@@ -5,56 +5,60 @@ description: "Professional real estate photography, floor plans, 360 walkthrough
 page_css: real-estate-bright.css
 ---
 
-<section class="re-hero re-hero-optionA">
-  <div class="re-hero-bg-glow"></div>
-  <div class="container re-hero-grid-A">
-    <div class="re-hero-copy-A">
+<section class="re-hero re-hero-cinematic">
+  <img class="re-hero-bg-image" src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Twilight real estate photography example">
+  <div class="re-hero-overlay"></div>
+  <div class="container re-hero-cinematic-inner">
+    <div class="re-hero-cinematic-copy">
       <p class="re-eyebrow">Real Estate Media for Northwest Arkansas</p>
-      <h1>Make your next listing impossible to scroll past.</h1>
-      <p class="re-lead">Premium HDR photography, drone aerials, and interactive floor plans designed to make buyers stop, understand the property faster, and feel confident scheduling a showing.</p>
+      <h1>Make your next listing impossible to ignore.</h1>
+      <p class="re-lead">Premium photography, drone media, floor plans, and walkthroughs designed to make buyers stop scrolling and feel confident scheduling a showing.</p>
       <div class="re-actions">
         <a class="re-button primary" href="#re-pricing">See Pricing</a>
-        <a class="re-button secondary" href="#re-booking">Book a Session</a>
-      </div>
-      <div class="re-hero-mini-proof">
-        <span>24-48 hr turnaround</span>
-        <span>MLS-ready delivery</span>
-        <span>Drone + floor plans available</span>
+        <a class="re-button secondary re-button-secondary-light" href="#re-booking">Book a Session</a>
       </div>
     </div>
-    <div class="re-hero-media-wrap">
-      <img class="re-hero-photo-A" src="{{ '/assets/media/better-bella-twilight.png' | relative_url }}" alt="Twilight listing photography example">
-      <div class="re-hero-image-label">
-        <span class="re-hero-image-kicker">Vista Venture Real Estate Media</span>
-        <strong>Listings that feel elevated from the first click.</strong>
+    <div class="re-hero-stat-row">
+      <div class="re-hero-stat-card">
+        <span>24-48 HR</span>
+        <strong>Turnaround</strong>
+      </div>
+      <div class="re-hero-stat-card">
+        <span>MLS READY</span>
+        <strong>Delivery</strong>
+      </div>
+      <div class="re-hero-stat-card">
+        <span>ONE VENDOR</span>
+        <strong>Photo · Drone · Floor Plans · 360</strong>
       </div>
     </div>
   </div>
 </section>
 
 <section class="re-first-time-deal">
-  <div class="container re-deal-content">
-    <div class="re-deal-text">
+  <div class="container re-deal-shell">
+    <div class="re-deal-heading">
       <p class="re-deal-badge">New Agent Intro Offer</p>
-      <h2>Choose the first-listing bonus that helps you most.</h2>
-      <p>Book the full listing package for your first property and choose one introductory offer:</p>
-      <div class="re-deal-value-line">
-        <span class="re-deal-big">$250</span>
-        <div>
-          <strong>Save $85 on the full listing package</strong>
-          <p>Includes HDR photos, drone aerial images, and a 2D floor plan tour. Normally $335.</p>
-        </div>
-      </div>
+      <h2>Choose one first-listing bonus.</h2>
+      <p>Book your first full listing package and pick the option that helps you most.</p>
     </div>
-    <div class="re-deal-alt">
-      <p class="re-deal-or">Or choose this instead</p>
-      <div class="re-deal-option re-deal-option-highlight">
-        <strong>Free 5-Image Agent Headshot Set</strong>
-        <span>Pay the standard $335 first-listing package price and receive five edited professional headshots for your marketing at no extra cost.</span>
-      </div>
-      <p class="re-deal-terms">Choose either the $85 package discount or the free 5-image headshot set. First listing only. One introductory offer per agent.</p>
-      <a class="re-button re-button-gold" href="#re-booking">Claim the New Agent Offer</a>
+    <div class="re-deal-choice-grid">
+      <article class="re-deal-choice-card">
+        <p class="re-deal-choice-kicker">Option 1</p>
+        <strong class="re-deal-choice-value">$85 OFF</strong>
+        <h3>Full Listing Package</h3>
+        <p>Pay <strong>$250</strong> instead of $335 for HDR photos, drone aerial images, and a 2D floor plan tour.</p>
+      </article>
+      <div class="re-deal-choice-or">OR</div>
+      <article class="re-deal-choice-card">
+        <p class="re-deal-choice-kicker">Option 2</p>
+        <strong class="re-deal-choice-value">FREE</strong>
+        <h3>5-Image Agent Headshot Set</h3>
+        <p>Pay the standard $335 listing-package price and receive five edited professional headshots for your marketing.</p>
+      </article>
     </div>
+    <p class="re-deal-terms re-deal-terms-wide">First listing only. One introductory offer per agent.</p>
+    <div class="re-deal-cta-wrap"><a class="re-button re-button-gold" href="#re-booking">Claim the New Agent Offer</a></div>
   </div>
 </section>
 
