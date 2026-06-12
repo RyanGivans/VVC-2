@@ -1,84 +1,98 @@
 ---
 layout: default
-title: "Personal Photography | Vista Venture Co."
+title: "Portrait Photography | Vista Venture Co."
 description: "Portrait photography for individuals, couples, families, seniors, and personal milestones with natural images people actually want to keep and share."
 page_css: photography.css
 ---
 
-<section class="svc-hero photography-hero">
-  <div class="container">
-    <p class="eyebrow">Personal Photography</p>
-    <h1>Images that feel like you.</h1>
-    <p>Natural, polished portraits for individuals, couples, families, seniors, and personal milestones. The goal is simple: create photos that feel real, flattering, and worth keeping.</p>
-    <div class="svc-actions">
-      <a class="button" href="{{ '/contact/' | relative_url }}">Plan a Session</a>
-      <a class="button secondary" href="#photography-work">View Examples</a>
+<section class="photo-hero">
+  <img class="photo-hero-image" src="{{ '/assets/media/photography/portraits/IMG_9718.jpg' | relative_url }}" alt="Portrait photography example">
+  <div class="photo-hero-overlay"></div>
+  <div class="container photo-hero-inner">
+    <div class="photo-hero-copy">
+      <p class="eyebrow">Portrait Photography</p>
+      <h1>Photos that feel natural, polished, and worth keeping.</h1>
+      <p>Portrait sessions for individuals, couples, families, seniors, and personal milestones — with a relaxed process and images you will actually want to share.</p>
+      <div class="photo-actions">
+        <a class="button" href="#photography-work">View Portrait Work</a>
+        <a class="button secondary" href="{{ '/contact/' | relative_url }}">Book a Session</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="svc-section svc-dark">
-  <div class="container svc-heading">
-    <div><p class="eyebrow">Photos people actually use</p><h2>Not stiff. Not generic. Not overcomplicated.</h2></div>
-    <p>A portrait session should feel comfortable and intentional. Whether you need a clean headshot, a meaningful couples session, family photos, or a senior portrait set, the images should feel polished without losing personality.</p>
-  </div>
-  <div class="container svc-grid four">
-    <article class="svc-card"><span class="number">01</span><h3>Individuals</h3><p>Portraits, profile images, lifestyle photos, and personal branding that feel natural and confident.</p></article>
-    <article class="svc-card"><span class="number">02</span><h3>Couples</h3><p>Relaxed, thoughtful images that feel personal rather than staged or overly posed.</p></article>
-    <article class="svc-card"><span class="number">03</span><h3>Families</h3><p>Updated family photos and milestones captured with a cleaner, more modern look.</p></article>
-    <article class="svc-card"><span class="number">04</span><h3>Seniors + Milestones</h3><p>Portrait sessions designed around personality, interests, and the moment you want to remember.</p></article>
+<section class="photo-trust-strip">
+  <div class="container photo-trust-grid">
+    <article><strong>Relaxed, guided sessions</strong><span>Enough direction to feel confident without making the photos feel stiff.</span></article>
+    <article><strong>Professionally edited galleries</strong><span>Clean, polished images ready for printing, posting, and sharing.</span></article>
+    <article><strong>Built around your style</strong><span>Location, pacing, and image mix shaped around what you actually want.</span></article>
   </div>
 </section>
 
-<section id="photography-work" class="svc-section svc-light">
-  <div class="container svc-heading">
-    <div><p class="eyebrow">Portrait examples</p><h2>Clean, expressive, and easy to use.</h2></div>
+<section id="photography-work" class="photo-gallery-section">
+  <div class="container photo-heading-row">
+    <div><p class="eyebrow">Portrait examples</p><h2>See the work first.</h2></div>
     <p>Every session can be tailored around location, style, and the type of images you want to walk away with.</p>
   </div>
-  <div class="container svc-mosaic">
-    <figure class="svc-gallery-card"><img src="{{ '/assets/media/raven.jpg' | relative_url }}" alt="Personal portrait photography example"><figcaption class="svc-gallery-label"><span>Portrait</span><strong>Natural and confident</strong></figcaption></figure>
-    <figure class="svc-gallery-card"><img src="{{ '/assets/media/photography/portraits/Jocelyn at Petal and Pane-3.jpg' | relative_url }}" alt="Lifestyle portrait example"><figcaption class="svc-gallery-label"><span>Lifestyle</span><strong>Relaxed and personal</strong></figcaption></figure>
-    <figure class="svc-gallery-card"><img src="{{ '/assets/media/photography/portraits/Jocelyn at Petal and Pane-2.jpg' | relative_url }}" alt="Portrait session example"><figcaption class="svc-gallery-label"><span>Session</span><strong>Thoughtful locations</strong></figcaption></figure>
-    <figure class="svc-gallery-card"><img src="{{ '/assets/media/photography/portraits/Jocelyn at Petal and Pane-5.jpg' | relative_url }}" alt="Portrait at Petal and Pane"><figcaption class="svc-gallery-label"><span>Portrait</span><strong>Modern and usable</strong></figcaption></figure>
-    <figure class="svc-gallery-card"><img src="{{ '/assets/media/photography/portraits/Jocelyn at Petal and Pane-7.jpg' | relative_url }}" alt="Personal photography example"><figcaption class="svc-gallery-label"><span>Details</span><strong>More than one look</strong></figcaption></figure>
-    <figure class="svc-gallery-card"><img src="{{ '/assets/media/photography/portraits/Jocelyn at Petal and Pane-10.jpg' | relative_url }}" alt="Personal portrait session"><figcaption class="svc-gallery-label"><span>Gallery</span><strong>A complete set</strong></figcaption></figure>
+
+  <div class="container photo-gallery-grid">
+    <figure class="photo-card photo-card-tall"><img src="{{ '/assets/media/photography/portraits/IMG_9718.jpg' | relative_url }}" alt="Portrait photography example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/Gavin Pool.jpg' | relative_url }}" alt="Outdoor portrait photography example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/Jocelyn at Petal and Pane-4.jpg' | relative_url }}" alt="Lifestyle portrait photography example"></figure>
+    <figure class="photo-card photo-card-wide"><img src="{{ '/assets/media/photography/portraits/Jocelyn at Petal and Pane-7.jpg' | relative_url }}" alt="Portrait photography at Petal and Pane"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/_DSC0005.jpg' | relative_url }}" alt="Professional portrait example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/_DSC1174.jpg' | relative_url }}" alt="Personal portrait example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/mattie.JPEG' | relative_url }}" alt="Portrait session example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/meee.jpg' | relative_url }}" alt="Portrait photography example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/mel-sage.JPG' | relative_url }}" alt="Lifestyle portrait example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/roxy.jpg' | relative_url }}" alt="Portrait photography example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/roxy2.jpg' | relative_url }}" alt="Portrait photography example"></figure>
+    <figure class="photo-card"><img src="{{ '/assets/media/photography/portraits/ryan.jpg' | relative_url }}" alt="Portrait photography example"></figure>
+    <figure class="photo-card photo-card-wide"><img src="{{ '/assets/media/photography/events/IMG_0068.JPG' | relative_url }}" alt="Event photography example"></figure>
   </div>
 </section>
 
-<section class="svc-section svc-green">
-  <div class="container svc-split">
-    <div>
-      <p class="eyebrow">A session built around you</p>
-      <h2>Simple process. Better photos.</h2>
-      <p>We will talk through what you need, the feel you are going for, and where the photos will be used. From there, the session can be shaped around the right location, timing, and image mix.</p>
-      <p>The goal is not to overproduce the experience. It is to make it easy to show up, feel comfortable, and leave with images you are excited to share.</p>
-      <a class="button" href="{{ '/contact/' | relative_url }}">Plan Your Session</a>
-    </div>
-    <div class="svc-list">
-      <div><strong>Before the session</strong><span>We choose a location, talk through the look, and plan around the type of images you need.</span></div>
-      <div><strong>During the session</strong><span>I guide the process while keeping it relaxed enough that the photos still feel natural.</span></div>
-      <div><strong>After the session</strong><span>You receive a polished set of edited images ready for printing, posting, and sharing.</span></div>
-    </div>
+<section class="photo-types-section">
+  <div class="container photo-heading-row">
+    <div><p class="eyebrow">Session types</p><h2>Built around the photos you actually need.</h2></div>
+    <p>Whether you need a clean headshot, a meaningful couples session, family photos, a senior portrait set, or images from a special event, the session should feel comfortable and intentional.</p>
+  </div>
+  <div class="container photo-types-grid">
+    <article><span>01</span><h3>Individuals</h3><p>Portraits, profile images, lifestyle photos, and personal branding that feel natural and confident.</p></article>
+    <article><span>02</span><h3>Couples</h3><p>Relaxed, thoughtful images that feel personal rather than staged or overly posed.</p></article>
+    <article><span>03</span><h3>Families</h3><p>Updated family photos and milestones captured with a cleaner, more modern look.</p></article>
+    <article><span>04</span><h3>Seniors + Milestones</h3><p>Portrait sessions designed around personality, interests, and the moment you want to remember.</p></article>
   </div>
 </section>
 
-<section class="svc-section svc-dark">
-  <div class="container svc-heading">
+<section class="photo-pricing-section">
+  <div class="container photo-heading-row">
     <div><p class="eyebrow">Session pricing</p><h2>Choose the right amount of time.</h2></div>
     <p>Every session is a little different. These starting points make it easier to choose the right scale without overcomplicating the process.</p>
   </div>
-  <div class="container svc-price-grid">
-    <article class="svc-price-card"><div><p class="eyebrow">Basic</p><h3>Quick Portrait Session</h3><div class="svc-price">$150</div><p>A focused session for updated portraits, profile images, or a small set of polished photos.</p></div><div class="svc-tags"><span class="svc-pill">Simple</span><span class="svc-pill">Focused</span></div></article>
-    <article class="svc-price-card featured"><div><p class="eyebrow">Most Popular</p><h3>Standard Session</h3><div class="svc-price">$250</div><p>More time, more variety, and a stronger gallery for couples, families, seniors, and personal branding.</p></div><div class="svc-tags"><span class="svc-pill">More Variety</span><span class="svc-pill">Multiple Looks</span></div></article>
-    <article class="svc-price-card"><div><p class="eyebrow">Premium</p><h3>Extended Session</h3><div class="svc-price">$400</div><p>Best for more involved sessions, multiple locations, outfit changes, or a broader image set.</p></div><div class="svc-tags"><span class="svc-pill">Expanded Gallery</span><span class="svc-pill">More Flexibility</span></div></article>
+  <div class="container photo-price-grid">
+    <article class="photo-price-card"><p class="eyebrow">Basic</p><h3>Quick Portrait Session</h3><strong>$150</strong><p>A focused session for updated portraits, profile images, or a small set of polished photos.</p><div><span>Simple</span><span>Focused</span></div></article>
+    <article class="photo-price-card featured"><p class="eyebrow">Most Popular</p><h3>Standard Portrait Session</h3><strong>$250</strong><p>More time, more variety, and a stronger gallery for couples, families, seniors, and personal branding.</p><div><span>More Variety</span><span>Multiple Looks</span></div></article>
+    <article class="photo-price-card"><p class="eyebrow">Premium</p><h3>Extended Portrait Session</h3><strong>$400</strong><p>Best for more involved sessions, multiple locations, outfit changes, or a broader image set.</p><div><span>Expanded Gallery</span><span>More Flexibility</span></div></article>
   </div>
 </section>
 
-<section class="svc-cta">
+<section class="photo-process-section">
+  <div class="container photo-process-grid">
+    <div><p class="eyebrow">A session built around you</p><h2>Simple process. Better photos.</h2><p>We will talk through what you need, the feel you are going for, and where the photos will be used. From there, the session can be shaped around the right location, timing, and image mix.</p><p>The goal is not to overproduce the experience. It is to make it easy to show up, feel comfortable, and leave with images you are excited to share.</p></div>
+    <div class="photo-process-list">
+      <article><strong>Before the session</strong><span>We choose a location, talk through the look, and plan around the type of images you need.</span></article>
+      <article><strong>During the session</strong><span>I guide the process while keeping it relaxed enough that the photos still feel natural.</span></article>
+      <article><strong>After the session</strong><span>You receive a polished set of edited images ready for printing, posting, and sharing.</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="photo-cta-section">
   <div class="container">
     <p class="eyebrow">Make the moment worth keeping</p>
     <h2>Let’s create photos that feel personal.</h2>
     <p>Tell me what kind of session you have in mind. We will choose the right approach and make the process easy from there.</p>
-    <div class="svc-actions"><a class="button" href="{{ '/contact/' | relative_url }}">Plan a Session</a></div>
+    <a class="button" href="{{ '/contact/' | relative_url }}">Plan a Session</a>
   </div>
 </section>
