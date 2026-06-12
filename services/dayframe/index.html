@@ -1,128 +1,72 @@
----
-layout: default
-title: "Dayframe | Modern School Picture Day"
-description: "Modern school photography for Northwest Arkansas schools with organized picture days, digital galleries, fair pricing, natural portraits, and a classroom give-back option."
-page_css: dayframe.css
----
-
-<section class="dayframe-hero">
-  <div class="container dayframe-hero-grid">
-    <div class="dayframe-hero-copy">
-      <img class="dayframe-page-logo" src="{{ '/assets/logos/primary/dayframe-logo-trans-horizontal.png' | relative_url }}" alt="Dayframe - A Vista Venture Company">
-      <p class="dayframe-eyebrow">Northwest Arkansas School Photography</p>
-      <h1>Modern school picture day.<span>simplified.</span></h1>
-      <p>Built for schools. Loved by parents. Organized picture-day workflow, digital delivery, simple pricing, and natural portraits without the usual stress.</p>
-      <div class="dayframe-actions">
-        <a class="dayframe-button primary" href="#dayframe-contact">Schedule a School Consultation</a>
-        <a class="dayframe-button secondary" href="#dayframe-pricing">View Pricing</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dayframe | School Photo Day, Simplified</title>
+  <meta name="description" content="Modern school photography for Northwest Arkansas schools. Simple pricing, digital delivery, family photo days, team photos, clubs, and staff headshots." />
+  <style>
+    :root{--navy:#061b3d;--blue:#0b3f9f;--green:#2f7d20;--gold:#d8b24f;--cream:#f7f8f4;--white:#ffffff;--ink:#07142d;--muted:#5d6a7f;--line:rgba(6,27,61,.13);--shadow:0 30px 90px rgba(6,27,61,.16)}
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.5}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{width:min(1180px,90vw);margin:0 auto}
+    .nav{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;color:var(--navy)}.brand-logo{width:230px;max-width:100%;height:auto}.nav-links{display:flex;align-items:center;gap:18px;font-size:12px;font-weight:900;letter-spacing:1px;text-transform:uppercase;color:var(--navy)}.nav-links a{opacity:.82}.nav-links a:hover{opacity:1;color:var(--blue)}.nav-cta{border:2px solid var(--blue);color:var(--blue);border-radius:999px;padding:10px 15px}
+    section{padding:86px 0}.eyebrow{color:var(--green);font-weight:900;text-transform:uppercase;letter-spacing:3px;font-size:13px;margin-bottom:16px}h1{color:var(--navy);font-size:clamp(58px,8.5vw,118px);line-height:.82;letter-spacing:-6px;text-transform:uppercase}.script{display:block;font-family:Georgia,serif;font-style:italic;color:var(--green);text-transform:none;font-size:clamp(42px,6.4vw,78px);line-height:1;letter-spacing:-2px;margin-top:8px}.hero-copy,.lead-copy{margin-top:24px;font-size:22px;color:#28354b;max-width:760px}.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:16px 24px;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:1.2px;transition:.25s ease;cursor:pointer;border:none}.btn.primary{background:var(--blue);color:#fff;box-shadow:0 16px 38px rgba(11,63,159,.25)}.btn.secondary{background:#fff;border:2px solid var(--navy);color:var(--navy)}.btn.green{background:var(--green);color:#fff}.btn:hover{transform:translateY(-3px)}
+    .section-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:end;margin-bottom:34px}.section-head h2,.section-title{color:var(--navy);font-size:clamp(42px,5.8vw,82px);line-height:.88;letter-spacing:-4px;text-transform:uppercase}.section-head p{color:#415068;font-size:20px;max-width:780px}.photo-tile{position:relative;overflow:hidden;border-radius:34px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.72);background:#dfe7ef}.photo-tile img{width:100%;height:100%;object-fit:cover}.feature-photo{height:430px;margin:0 0 32px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:30px;box-shadow:0 18px 55px rgba(6,27,61,.08);transition:.3s ease}.card:hover{transform:translateY(-6px);box-shadow:0 28px 80px rgba(6,27,61,.14)}.card.dark{background:linear-gradient(135deg,var(--navy),#082b64);color:#fff}.card.green{background:linear-gradient(135deg,var(--green),#1b5517);color:#fff}.card h3{font-size:28px;line-height:1;text-transform:uppercase;color:inherit;margin-bottom:14px}.card p{color:inherit;opacity:.84}.price{color:var(--blue);font-size:72px;line-height:.95;font-weight:900;letter-spacing:-5px;margin:8px 0 14px}.dark .price,.green .price{color:#fff}ul{list-style:none;display:grid;gap:11px;margin-top:18px}li{position:relative;padding-left:28px;color:#2f3d53}.dark li,.green li{color:#fff}li::before{content:"✓";position:absolute;left:0;top:0;color:var(--green);font-weight:900}.dark li::before,.green li::before{color:#fff}
+    .hero{min-height:100vh;padding:150px 0 90px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 18% 22%,rgba(47,125,32,.18),transparent 32%),radial-gradient(circle at 84% 18%,rgba(11,63,159,.18),transparent 34%),linear-gradient(135deg,#fff,#edf5ff 64%,#f8fbf6)}.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(6,27,61,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(6,27,61,.035) 1px,transparent 1px);background-size:42px 42px;pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.hero-visual{position:relative;min-height:620px}.portrait-card{position:absolute;inset:0 0 70px 70px;border-radius:38px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.72)}.portrait-card img{width:100%;height:100%;object-fit:cover}.float-note{position:absolute;right:0;top:38px;background:var(--green);color:#fff;border-radius:999px;padding:14px 20px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px;box-shadow:0 16px 40px rgba(47,125,32,.28);z-index:2}.price-card{position:absolute;left:0;bottom:0;width:min(390px,84%);background:rgba(255,255,255,.9);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.8);border-radius:30px;padding:28px;box-shadow:0 28px 80px rgba(6,27,61,.2);z-index:2}.price-card span{display:block;color:var(--navy);font-weight:900;text-transform:uppercase;letter-spacing:1px}.price-card strong{display:block;color:var(--blue);font-size:76px;line-height:.95;letter-spacing:-5px;margin:8px 0}
+    .pilot-offer{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.pilot-box{display:grid;grid-template-columns:.95fr 1.05fr;gap:28px;align-items:center;background:linear-gradient(135deg,#fff,#eef5ff);border:1px solid var(--line);border-radius:38px;padding:38px;box-shadow:var(--shadow)}.pilot-box h2{color:var(--navy);font-size:clamp(36px,5vw,68px);line-height:.9;letter-spacing:-3px;text-transform:uppercase;margin-bottom:18px}.pilot-box p{color:#344259;font-size:20px}.pilot-points{display:grid;gap:14px}.pilot-points div{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px}.pilot-points strong{display:block;color:var(--blue);font-size:14px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:6px}.pilot-points span{color:var(--muted)}
+    .parents-strip{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.icon-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}.icon-card{border:1px solid var(--line);border-radius:26px;padding:26px;background:linear-gradient(180deg,#fff,#f7fbff);min-height:190px;box-shadow:0 14px 40px rgba(6,27,61,.06)}.icon{width:54px;height:54px;border-radius:18px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:24px;margin-bottom:18px}.icon-card h3{color:var(--navy);font-size:18px;text-transform:uppercase;margin-bottom:8px}.icon-card p{color:var(--muted);font-size:15px}.school-photo-grid,.stat-photo-grid,.process-photo-grid,.split,.family-box,.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.privacy-note{margin-top:20px;padding:18px 22px;border-radius:18px;background:#f1f5fb;color:#344259;border:1px solid var(--line)}.stats{background:linear-gradient(135deg,#061b3d,#082b64);color:#fff}.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.stat{padding:24px;border-radius:20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}.stat strong{display:block;color:var(--gold);font-size:42px}.stat span{display:block;margin-top:6px;color:rgba(255,255,255,.82)}.giveback h2,.family-box h2,.about-grid h2,.final h2{color:var(--navy);font-size:clamp(42px,5.5vw,78px);line-height:.9;letter-spacing:-4px;text-transform:uppercase}.family-feature{background:linear-gradient(135deg,#edf5ff,#f8fbf6)}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.compare-card{padding:22px;border-radius:20px;background:#fff;border:1px solid var(--line)}.compare-card strong{display:block;color:var(--blue);font-size:44px}.compare-card span{display:block;color:var(--navy);font-weight:900;text-transform:uppercase}.team-feature,.collage-small,.about-photo-large{position:relative;overflow:hidden;border-radius:28px;box-shadow:var(--shadow)}.team-feature img{width:100%;height:460px;object-fit:cover}.collage-label{position:absolute;left:18px;right:18px;bottom:18px;padding:16px;border-radius:18px;background:rgba(6,27,61,.82);color:#fff}.collage-label span{display:block;color:var(--gold);font-size:12px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.collage-label h3{margin-top:4px;font-size:24px;text-transform:uppercase}.team-grid-small{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}.collage-small img{width:100%;height:340px;object-fit:contain;object-position:center top;border-radius:28px;background:#dfe7ef}.process{display:grid;gap:14px}.step{padding:22px;border-radius:20px;border:1px solid var(--line);background:#fff}.step h3{color:var(--blue);text-transform:uppercase;margin-bottom:6px}.trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:24px}.trust{padding:16px;border-radius:16px;background:#fff;border:1px solid var(--line);text-align:center;color:var(--navy);font-weight:900}.about-band{background:linear-gradient(135deg,#061b3d,#082b64);color:#fff}.about-grid h2{color:#fff}.about-grid p{color:rgba(255,255,255,.82);font-size:19px;margin-top:12px}.about-photo-large{margin-top:40px;border:1px solid rgba(255,255,255,.14)}.about-photo-large img{width:100%;height:auto;object-fit:contain;background:#061b3d}.final{background:#fff}.final-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}.school-form{padding:28px;border-radius:28px;background:#f7fbff;border:1px solid var(--line);box-shadow:var(--shadow)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px;margin-bottom:14px}.field label{font-weight:900;color:var(--navy);font-size:13px;text-transform:uppercase;letter-spacing:.8px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:14px;padding:14px 15px;background:#fff;color:var(--ink);font:inherit}.field textarea{min-height:140px;resize:vertical}.form-actions{margin-top:12px}.site-footer{padding:28px 0;background:#061b3d;color:rgba(255,255,255,.72)}.site-footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.site-footer a{color:#fff;font-weight:900}
+    @media(max-width:980px){.nav-links{display:none}.hero-grid,.pilot-box,.section-head,.school-photo-grid,.stat-photo-grid,.process-photo-grid,.split,.family-box,.about-grid,.final-grid{grid-template-columns:1fr}.hero-visual{min-height:520px}.icon-row,.cards,.team-grid-small,.trust-grid{grid-template-columns:1fr}.stat-grid,.comparison,.form-grid{grid-template-columns:1fr}.feature-photo{height:auto}.team-feature img{height:auto}.collage-small img{height:auto;max-height:none}.portrait-card{inset:0 0 70px 20px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/">
+        <img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/trans-logo.png" alt="Dayframe - A Vista Venture Company" class="brand-logo">
+      </a>
+      <div class="nav-links">
+        <a href="#school">School Photos</a><a href="#family">Family Day</a><a href="#teams">Teams</a><a href="#how">How It Works</a><a class="nav-cta" href="#contact">Start</a>
       </div>
     </div>
-    <div class="dayframe-hero-media">
-      <div class="dayframe-main-photo"><img src="https://www.vistaventureco.com/dayframe/assets/students-9x9.jpg" alt="Dayframe student portrait examples"></div>
-      <div class="dayframe-price-card"><span>School Photo Day</span><strong>$30</strong><span>Per Student · Digital Delivery</span></div>
-      <div class="dayframe-float-note">20% classroom give-back option</div>
-    </div>
-  </div>
-</section>
+  </nav>
 
-<section class="dayframe-section dayframe-pilot">
-  <div class="container dayframe-pilot-grid">
-    <div>
-      <p class="dayframe-eyebrow">Pilot Program</p>
-      <h2>Start with one grade, one team, or one small group.</h2>
-      <p>Schools do not have to commit the entire school right away. Try the Dayframe process with a grade level, staff headshots, a sports team, or a smaller student group first.</p>
-    </div>
-    <div class="dayframe-mini-grid">
-      <article><strong>Low Risk</strong><span>Test the process before a full-school picture day.</span></article>
-      <article><strong>Easy Setup</strong><span>We handle planning, photo flow, galleries, and delivery.</span></article>
-      <article><strong>Real Proof</strong><span>See the quality and parent experience before scaling up.</span></article>
-    </div>
-  </div>
-</section>
-
-<section class="dayframe-section dayframe-white">
-  <div class="container dayframe-heading">
-    <div><p class="dayframe-eyebrow">Why schools choose Dayframe</p><h2>Picture day should not disrupt the school day.</h2></div>
-    <p>Dayframe is designed to modernize school photography with a smoother workflow, clearer communication, and a better experience for families.</p>
-  </div>
-  <div class="container dayframe-feature-photo"><img src="https://www.vistaventureco.com/dayframe/assets/setup-checkin.jpg" alt="Dayframe picture-day setup and check-in area"></div>
-  <div class="container dayframe-card-grid three">
-    <article class="dayframe-card"><h3>Organized Workflow</h3><p>Designed to keep picture day moving without unnecessary interruptions.</p><ul><li>Managed setup and flow</li><li>Clear scheduling</li><li>Reliable communication</li></ul></article>
-    <article class="dayframe-card dark"><h3>Digital First</h3><p>A modern school-photo experience for modern families.</p><ul><li>Private galleries</li><li>No paper order forms</li><li>Simple online ordering</li></ul></article>
-    <article class="dayframe-card green"><h3>Classroom Give Back</h3><p>Picture day can directly support teachers and students.</p><ul><li>20% give-back option</li><li>Supports classroom needs</li><li>Easy for schools to explain</li></ul></article>
-  </div>
-</section>
-
-<section class="dayframe-section dayframe-soft">
-  <div class="container dayframe-heading">
-    <div><p class="dayframe-eyebrow">Why parents love it</p><h2>Good photos without the mess.</h2></div>
-    <p>No envelopes, no confusing bundles, and no complicated ordering process. Families get a cleaner, easier way to receive portraits they are excited to keep.</p>
-  </div>
-  <div class="container dayframe-feature-photo"><img src="https://www.vistaventureco.com/dayframe/assets/worker-and-student.jpg" alt="Dayframe photographer helping a student feel comfortable"></div>
-  <div class="container dayframe-icon-grid">
-    <article><span>✓</span><h3>No Forms</h3><p>No paper envelopes or confusing paperwork.</p></article>
-    <article><span>📷</span><h3>Natural Smiles</h3><p>Clean portraits with a more relaxed feel.</p></article>
-    <article><span>🔒</span><h3>Secure Galleries</h3><p>Private digital delivery for each family.</p></article>
-    <article><span>⚡</span><h3>Fast Delivery</h3><p>Quick turnaround with easy online access.</p></article>
-    <article><span>$</span><h3>Fair Pricing</h3><p>Transparent pricing without inflated bundles.</p></article>
-  </div>
-</section>
-
-<section id="dayframe-pricing" class="dayframe-section dayframe-white">
-  <div class="container dayframe-heading">
-    <div><p class="dayframe-eyebrow">Modern portraits for modern families</p><h2>Simple pricing. Better school photos.</h2></div>
-    <p>Every participating student receives a clean, professionally edited portrait experience. Schools can also receive yearbook- or ID-ready files for school use.</p>
-  </div>
-  <div class="container dayframe-school-grid">
-    <div class="dayframe-feature-photo no-margin"><img src="https://www.vistaventureco.com/dayframe/assets/students-9x9.jpg" alt="Dayframe school portrait grid"></div>
-    <article class="dayframe-card dark dayframe-price-panel"><p class="dayframe-eyebrow">School Photo Day</p><div class="dayframe-price">$30</div><p>Per student</p><ul><li>Clean, yearbook-ready portrait</li><li>Natural, relaxed expression</li><li>Professionally edited images</li><li>Fully digital family delivery</li><li>School-use image included</li></ul></article>
-  </div>
-  <div class="container dayframe-card-grid three compact">
-    <article class="dayframe-card"><h3>Built for Parents</h3><ul><li>No confusing packages</li><li>No envelopes or paper forms</li><li>Fair, transparent pricing</li><li>Private galleries</li></ul></article>
-    <article class="dayframe-card"><h3>Built for Schools</h3><ul><li>Minimal disruption</li><li>Managed setup</li><li>Organized workflow</li><li>Secure handling</li></ul></article>
-    <article class="dayframe-card green"><h3>Digital Delivery</h3><ul><li>Easy downloads</li><li>No print pressure</li><li>Modern family experience</li><li>Fast access</li></ul></article>
-  </div>
-</section>
-
-<section class="dayframe-section dayframe-navy">
-  <div class="container dayframe-heading invert">
-    <div><p class="dayframe-eyebrow">More than one kind of photo day</p><h2>Built for schools, teams, staff, and families.</h2></div>
-    <p>Dayframe can support more than annual student portraits. The same organized process can work for sports teams, athlete portraits, staff photos, family days, and pilot programs.</p>
-  </div>
-  <div class="container dayframe-card-grid four">
-    <article class="dayframe-card glass"><h3>Student Portraits</h3><p>Modern school photos with private family delivery.</p></article>
-    <article class="dayframe-card glass"><h3>Sports Teams</h3><p>Team photos and athlete portraits with a cleaner look.</p></article>
-    <article class="dayframe-card glass"><h3>Staff Headshots</h3><p>Professional images for school directories and websites.</p></article>
-    <article class="dayframe-card glass"><h3>Family Photo Day</h3><p>A school-community option that can create additional value.</p></article>
-  </div>
-  <div class="container dayframe-setup-grid">
-    <img src="https://www.vistaventureco.com/dayframe/assets/setup.jpg" alt="Dayframe school picture day setup">
-    <img src="https://www.vistaventureco.com/dayframe/assets/students-9x9.jpg" alt="Dayframe student portraits">
-  </div>
-</section>
-
-<section id="dayframe-contact" class="dayframe-section dayframe-contact">
-  <div class="container dayframe-contact-grid">
-    <div>
-      <p class="dayframe-eyebrow">Start a conversation</p>
-      <h2>Bring a better picture day to your school.</h2>
-      <p>Tell me about your school, your current picture-day setup, and whether you want to begin with a full school, one grade, a team, or another small pilot group.</p>
-    </div>
-    <form class="dayframe-form" action="https://formspree.io/f/xwvykbeg" method="POST">
-      <input type="hidden" name="_subject" value="[DAYFRAME-SCHOOL-INQUIRY] New School Photography Inquiry">
-      <div class="dayframe-form-grid">
-        <label>Name<input name="name" required></label>
-        <label>School or Organization<input name="school_name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Phone<input type="tel" name="phone"></label>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Northwest Arkansas School Photography</div>
+        <h1>Modern<br>School<br>Picture Day.<span class="script">simplified.</span></h1>
+        <p class="hero-copy">Built for schools. Loved by parents. Simple pricing, organized picture day workflow, digital delivery, and natural photos without the stress.</p>
+        <div class="btns"><a class="btn primary" href="#contact">Schedule a School Consultation</a><a class="btn secondary" href="#school">View Pricing</a></div>
       </div>
-      <label>What are you interested in?
-        <select name="dayframe_interest">
-          <option>Full School Picture Day</option><option>Pilot Program</option><option>Sports Team Photos</option><option>Staff Headshots</option><option>Family Photo Day</option><option>Not Sure Yet</option>
-        </select>
-      </label>
-      <label>Tell me about your school or idea<textarea name="message" rows="6" required></textarea></label>
-      <button class="dayframe-button primary" type="submit">Send Dayframe Inquiry</button>
-    </form>
-  </div>
-</section>
+      <div class="hero-visual">
+        <div class="portrait-card"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/working.jpg" alt="Dayframe student portraits"></div>
+        <div class="float-note">20% classroom give back option</div>
+        <div class="price-card"><span>School Photo Day</span><strong>$30</strong><span>Per Student · Digital Delivery</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="pilot-offer"><div class="wrap"><div class="pilot-box"><div><div class="eyebrow">Pilot Program</div><h2>Try Dayframe with one grade, one team, or one small group.</h2><p>Schools do not have to commit the entire school right away. Start with a simple pilot photo day for one grade level, one sports team, staff headshots, or a small group of students.</p></div><div class="pilot-points"><div><strong>Low Risk</strong><span>Test the process before a full school picture day.</span></div><div><strong>Easy Setup</strong><span>We handle the planning, photo flow, galleries, and delivery.</span></div><div><strong>Real Proof</strong><span>Your school gets to see the quality and parent experience first.</span></div></div></div></div></section>
+
+  <section><div class="wrap"><div class="section-head"><h2>Why schools choose Dayframe.</h2><p>We built Dayframe to modernize school photography. No confusing order forms. No overpriced print bundles. No stressful picture day process.</p></div><div class="photo-tile feature-photo"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/setup-checkin.jpg" alt="Dayframe setup and check-in area"></div><div class="cards"><div class="card"><h3>Organized Workflow</h3><p>Designed to keep picture day moving without disrupting the school day.</p><ul><li>Managed setup, flow, and delivery</li><li>Works with your existing schedule</li><li>Clear communication from start to finish</li></ul></div><div class="card dark"><h3>Digital First</h3><p>A modern photo experience for modern families.</p><ul><li>Secure digital galleries</li><li>No paper order forms</li><li>Simple pricing parents understand</li></ul></div><div class="card green"><h3>Classroom Give Back</h3><p>A simple way for picture day to directly support teachers and students.</p><ul><li>20% can go back to classroom needs</li><li>Helps teachers buy supplies and materials</li><li>Students see the benefit right in their classroom</li></ul></div></div></div></section>
+
+  <section class="parents-strip"><div class="wrap"><div class="section-head"><h2>Why parents love it.</h2><p>Parents want good photos without the mess. Dayframe makes the process simple, clear, private, and easy to use.</p></div><div class="photo-tile feature-photo"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/worker-and-student.jpg" alt="Dayframe photographer helping a student feel comfortable"></div><div class="icon-row"><div class="icon-card"><div class="icon">✓</div><h3>No Forms</h3><p>No envelopes, order sheets, or confusing paperwork.</p></div><div class="icon-card"><div class="icon">📷</div><h3>Natural Smiles</h3><p>Clean, modern portraits that feel relaxed and real.</p></div><div class="icon-card"><div class="icon">🔒</div><h3>Secure Galleries</h3><p>Private digital delivery for each family.</p></div><div class="icon-card"><div class="icon">⚡</div><h3>Fast Delivery</h3><p>Quick turnaround with easy online access.</p></div><div class="icon-card"><div class="icon">$</div><h3>Fair Pricing</h3><p>Transparent pricing without overpriced bundles.</p></div></div></div></section>
+
+  <section id="school"><div class="wrap"><div class="section-head"><h2>Modern photos for modern families.</h2><p>School portraits should be clean, natural, and easy to access. Every participating student can also receive a yearbook / ID-ready image for school use.</p></div><div class="school-photo-grid"><div class="photo-tile"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/students-9x9.jpg" alt="Students and siblings photographed by Dayframe"></div><div class="cards" style="grid-template-columns:1fr;"><div class="card dark"><h3>School Photo Day</h3><div class="price">$30</div><p>Per student</p><ul><li>Clean, yearbook-ready portrait</li><li>Natural, relaxed expression</li><li>Professionally edited images</li><li>Fully digital delivery</li><li>School receives yearbook / ID-ready image</li></ul></div></div></div><div class="cards" style="margin-top:22px;"><div class="card"><h3>Built for Parents</h3><ul><li>No confusing packages</li><li>No printing forms or envelopes</li><li>Fair, transparent pricing</li><li>Secure digital galleries</li><li>Stress-free ordering process</li></ul></div><div class="card"><h3>Built for Schools</h3><ul><li>Minimal disruption to your day</li><li>Fully managed setup</li><li>Organized photo workflow</li><li>Secure photo handling</li><li>Reliable communication</li></ul></div><div class="card green"><h3>Digital Delivery</h3><ul><li>Private galleries</li><li>Easy downloads</li><li>No order envelopes</li><li>No print pressure</li><li>Modern family experience</li></ul></div></div><div class="privacy-note"><strong>Privacy note:</strong> School portrait files for yearbook / ID use are handled separately from family photo sessions. Family session galleries stay private and are delivered directly to each family.</div></div></section>
+
+  <section class="stats"><div class="wrap"><div class="section-head"><h2 style="color:white;">Built for schools, not just photos.</h2><p style="color:rgba(255,255,255,.75);">Picture day should feel organized, professional, and easy for everyone involved.</p></div><div class="stat-photo-grid"><div class="photo-tile"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/setup.jpg" alt="Dayframe school photo day setup with students"></div><div class="stat-grid"><div class="stat"><strong>01</strong><span>Minimal classroom disruption with a planned student flow.</span></div><div class="stat"><strong>02</strong><span>Secure digital photo handling and private family access.</span></div><div class="stat"><strong>03</strong><span>Transparent pricing that parents understand quickly.</span></div><div class="stat"><strong>04</strong><span>Optional classroom give back that supports students directly.</span></div></div></div></div></section>
+
+  <section><div class="wrap split"><div class="giveback"><div class="eyebrow">Classroom Give Back Program</div><h2>Helping teachers help students.</h2><p>Teachers often spend their own money on supplies, materials, rewards, and classroom needs. Dayframe can help picture day give something useful back.</p><ul><li>20% of purchases can go to classroom funds</li><li>Helps with supplies, books, materials, and activities</li><li>Students get to see the impact directly</li><li>Simple way for parents to support their school</li><li>No complicated fundraiser setup</li></ul></div><div class="photo-tile"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/helping-teachers.jpg" alt="Dayframe professional photo setup"></div></div></section>
+
+  <section id="family" class="family-feature"><div class="wrap"><div class="family-box"><div class="photo-tile"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/family-4.jpg" alt="Family Photo Day portrait example"></div><div><div class="eyebrow">Special Add-On Opportunity</div><h2>Family Photo Day,<span class="script">right at school.</span></h2><p class="hero-copy">Professional family photo sessions often cost $200–$300+ and require parents to book somewhere else. Dayframe makes it easier: affordable family sessions after school, on campus, with no extra trip.</p><div class="comparison"><div class="compare-card"><strong>$60</strong><span>Quick Session</span><ul><li>5-minute guided session</li><li>Up to 3 poses</li><li>3 edited images</li></ul></div><div class="compare-card"><strong>$100</strong><span>Full Experience</span><ul><li>20-minute session</li><li>Multiple combinations</li><li>10 edited images included</li></ul></div></div><div class="privacy-note">Family galleries are private. Schools do not receive access to family session images.</div></div></div></div></section>
+
+  <section id="teams"><div class="wrap"><div class="section-head"><h2>Teams, clubs & staff.</h2><p>More than picture day. Dayframe can help schools capture teams, clubs, organizations, athletes, faculty, and important student groups.</p></div><div class="team-feature"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/baseball-team.jpg" alt="Team photo example"><div class="collage-label"><span>Teams & Organizations</span><h3>Sports team photos.</h3></div></div><div class="team-grid-small"><div class="collage-small"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/football-headshot.jpg" alt="Individual athlete portrait example"><div class="collage-label"><span>Individual Athletes</span><h3>Sport headshot portraits.</h3></div></div><div class="collage-small"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/teacher-headshot.jpg" alt="Staff headshot example"><div class="collage-label"><span>Staff & Faculty</span><h3>Teacher headshots.</h3></div></div><div class="collage-small"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/student-org.jpg" alt="Student clubs and organizations"><div class="collage-label"><span>Clubs & Organizations</span><h3>Student organizations.</h3></div></div></div><div class="cards" style="margin-top:22px;"><div class="card dark"><h3>Team Package</h3><div class="price">$350</div><p>Starting at · Includes up to 12 athletes</p><ul><li>Sports team photography</li><li>Group photo</li><li>Individual portraits</li><li>$10 per additional athlete</li></ul></div><div class="card"><h3>Individual Portraits</h3><div class="price">$30</div><ul><li>For athletes or students</li><li>Sports-style individual photo</li><li>Digital image delivery</li><li>Great for banners, programs, and social posts</li></ul></div><div class="card"><h3>Staff Headshots</h3><div class="price">$30</div><ul><li>Professional teacher headshots</li><li>Consistent staff look</li><li>Great for directories</li><li>Website-ready images</li></ul></div></div></div></section>
+
+  <section id="how"><div class="wrap"><div class="section-head"><h2>Simple process. Professional results.</h2><p>Dayframe is designed to make picture day easier for administrators, teachers, parents, students, and staff.</p></div><div class="process-photo-grid"><div class="process"><div class="step"><h3>Planning</h3><p>We coordinate with your school to schedule photo days and organize the workflow.</p></div><div class="step"><h3>Picture Day</h3><p>We handle setup, lighting, flow, and photography while keeping things smooth.</p></div><div class="step"><h3>Delivery</h3><p>Families receive secure digital galleries with a fast, modern delivery process.</p></div><div class="step"><h3>Support</h3><p>We provide responsive communication and support throughout the full process.</p></div></div><div class="photo-tile"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/student-outside-portrait.jpg" alt="Student portrait example"></div></div><div class="trust-grid"><div class="trust">Local NWA Company</div><div class="trust">Professional Setup</div><div class="trust">Secure Galleries</div><div class="trust">Fast Turnaround</div><div class="trust">Reliable Communication</div></div></div></section>
+
+  <section class="about-band"><div class="wrap about-grid"><div><div class="eyebrow" style="color:var(--gold);">A Vista Venture Company</div><h2>Modern photos.<br>Better systems.</h2></div><div><p>Dayframe was created to modernize school photography and create a better experience for both schools and families.</p><p>Based in Northwest Arkansas, we combine professional photography, streamlined systems, and modern delivery methods to create a clean, stress-free experience.</p></div></div><div class="wrap"><div class="about-photo-large"><img src="https://raw.githubusercontent.com/RyanGivans/vistaventureco/main/dayframe/assets/ad-4x4.jpg" alt="Dayframe brand image"></div></div></section>
+
+  <section id="contact" class="final"><div class="wrap final-grid"><div class="final-copy"><div class="eyebrow">Now booking school partners</div><h2>Let’s make picture day better.</h2><p>Whether you’re looking for school portraits, family photo sessions, team photography, or staff headshots, Dayframe provides a clean, modern solution designed for schools.</p><div class="btns"><a class="btn primary" href="mailto:info@vistaventureco.com?subject=Dayframe%20School%20Consultation">Request Information</a><a class="btn secondary" href="/contact/">Vista Contact Page</a></div></div><form class="school-form" action="https://formspree.io/f/xwvykbeg" method="POST"><input type="hidden" name="source" value="Dayframe page"><input type="hidden" name="service" value="Dayframe"><div class="form-grid"><div class="field"><label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="Your name" required></div><div class="field"><label for="school">School / Organization</label><input id="school" name="school" type="text" placeholder="School name" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com" required></div><div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="Phone number"></div></div><div class="field"><label for="message">Tell me what you need</label><textarea id="message" name="message" placeholder="Tell me about your school, team, or idea"></textarea></div><div class="form-actions"><button class="btn green" type="submit">Send Dayframe Inquiry</button></div></form></div></section>
+
+  <footer class="site-footer"><div class="wrap"><span>Dayframe · A Vista Venture Company</span><a href="/">Back to Vista Venture Co.</a></div></footer>
+</body>
+</html>
