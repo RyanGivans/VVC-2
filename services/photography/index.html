@@ -6,8 +6,6 @@ page_css: photography.css
 ---
 
 <section class="photo-hero">
-  <img class="photo-hero-image" src="{{ '/assets/media/photography/portraits/IMG_9718.jpg' | relative_url }}" alt="Portrait photography example">
-  <div class="photo-hero-overlay"></div>
   <div class="container photo-hero-inner">
     <div class="photo-hero-copy">
       <p class="eyebrow">Portrait Photography</p>
@@ -17,6 +15,10 @@ page_css: photography.css
         <a class="button" href="#photography-work">View Portrait Work</a>
         <a class="button secondary" href="#photo-booking">Book a Session</a>
       </div>
+    </div>
+
+    <div class="photo-hero-card" aria-label="Portrait photography example">
+      <img src="{{ '/assets/media/photography/portraits/IMG_9718.jpg' | relative_url }}" alt="Portrait photography example">
     </div>
   </div>
 </section>
